@@ -1,11 +1,11 @@
 header{
     width: 100%;
     color: #08A6E4;
-    display: inline-block;
     position: fixed;
     z-index: 1000;
     box-shadow: 10px 2px 15px gray;
     padding: 2% 5%;
+    top: 0;
 }
 
 header h1{
@@ -17,10 +17,10 @@ header h1{
 .toggle-menu{
     display: inline-block;
     max-width: 15%;
-    margin: auto 0 auto 6rem;
+    position: fixed;
+    right: 0;
+    top: 1.8rem;
     padding: 2%;
-    position: relative;
-    top: 0.8rem;
 }
 
 .toggle-menu span{
@@ -28,5 +28,5 @@ header h1{
     width: 2rem;
     height: 0.2rem;
     margin: 0.3rem;
-    background-color: #08A6E4;
+    background-color: var(--primary-color);
 }

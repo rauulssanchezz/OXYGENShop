@@ -1,11 +1,11 @@
 header {
   width: 100%;
   color: #08A6E4;
-  display: inline-block;
   position: fixed;
   z-index: 1000;
   box-shadow: 10px 2px 15px gray;
   padding: 2% 5%;
+  top: 0;
 }
 
 header h1 {
@@ -17,10 +17,10 @@ header h1 {
 .toggle-menu {
   display: inline-block;
   max-width: 15%;
-  margin: auto 0 auto 6rem;
+  position: fixed;
+  right: 0;
+  top: 1.8rem;
   padding: 2%;
-  position: relative;
-  top: 0.8rem;
 }
 
 .toggle-menu span {
@@ -28,19 +28,50 @@ header h1 {
   width: 2rem;
   height: 0.2rem;
   margin: 0.3rem;
-  background-color: #08A6E4;
+  background-color: var(--primary-color);
+}
+
+.container .sell-more {
+  padding: 0 10%;
+}
+.container .sell-more input {
+  background-color: var(--primary-color);
+  padding: 8% 10%;
+  border-radius: 100px;
+  border: none;
+  margin-top: 1rem;
+  width: 100%;
+  color: white;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.2901960784);
+}
+.container img {
+  width: 100%;
+}
+
+:root {
+  --primary-color: #08A6E4;
 }
 
 html {
   font-size: 19px;
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: "Raleway", serif;
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  position: relative;
+  top: 8rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

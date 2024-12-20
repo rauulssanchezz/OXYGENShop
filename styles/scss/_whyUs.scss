@@ -1,0 +1,21 @@
+
+.container{
+
+    .sell-more{
+        padding: 0 10%;
+        input{
+            background-color: var(--primary-color) ;
+            padding:  8% 10%;
+            border-radius: 100px;
+            border: none;
+            margin-top: 1rem;
+            width: 100%;
+            color: white;
+            box-shadow: 5px 10px 14px #07ACE64A;
+        }
+    }
+
+    img{
+        width: 100%;
+    }
+}
