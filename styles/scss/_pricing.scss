@@ -5,17 +5,41 @@
         font-weight: normal;
     }
 
+    input[type="button"]{
+        background: #EB476E;
+        color: white;
+        padding: 5%;
+        border-radius: 23px;
+        border: none;
+        width: 8rem;
+        height: 2.5rem;
+        position: relative;
+        bottom: -1.5rem;
+    }
+
     .pricing-element{
         border: 2px solid #FB3B64;
         border-radius: 18px;
         padding: 2%;
+        font-size: 0.6rem;
 
         .plan{
             display: inline-block;
             padding: 2%;
             width: 45%;
+            position: relative;
+            bottom: 3rem;
+            font-size: 1rem;
+
+            h3{
+               margin: 0;
+            }
+            
             p{
                 color: #FB3B64;
+                font-size: 3rem;
+                margin: 0;
+                
             }
         }
 
