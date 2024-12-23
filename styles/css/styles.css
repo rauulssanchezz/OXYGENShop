@@ -369,6 +369,89 @@ header h1 {
   bottom: -1.5rem;
 }
 
+.any-questions {
+  margin-top: 2rem;
+  padding: 5%;
+  text-align: start;
+}
+.any-questions h2 {
+  font-weight: normal;
+}
+.any-questions .img-and-text {
+  text-align: start;
+}
+.any-questions .img-and-text p {
+  color: #A5A5A5;
+  display: inline-block;
+  margin: auto;
+}
+.any-questions .img-and-text img {
+  display: inline-block;
+}
+.any-questions input[type=button] {
+  background: #08A6E4;
+  width: 70%;
+  padding: 7%;
+  border: none;
+  color: white;
+  border-radius: 35px;
+  box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
+  margin-top: 3rem;
+  margin-left: 4rem;
+}
+.any-questions input[type=checkbox] {
+  margin-top: 5rem;
+  background-color: transparent;
+}
+.any-questions input:checked {
+  background: none;
+}
+.any-questions label {
+  font-size: 0.8rem;
+  color: #707070;
+}
+.any-questions .form form {
+  margin-top: 1rem;
+}
+.any-questions .form form input {
+  border: none;
+  border-bottom: 2px solid #95989A;
+  display: block;
+  position: static;
+  margin-top: 1.5rem;
+}
+.any-questions .form form label {
+  color: #08A6E4;
+  display: block;
+  position: static;
+  margin-top: 2rem;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  top: 10rem;
+  background: #F7F7F7;
+  box-shadow: 0px -5px 40px 0px rgba(0, 0, 0, 0.2);
+}
+footer .text {
+  display: inline-block;
+}
+footer .text h2 {
+  font-weight: normal;
+  color: #08A6E4;
+}
+footer .text p {
+  color: #A5A5A5;
+  font-size: 0.8rem;
+}
+footer .footer {
+  display: inline-block;
+}
+footer .footer img {
+  display: inline-block;
+}
+
 :root {
   --primary-color: #08A6E4;
 }

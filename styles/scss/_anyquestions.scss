@@ -1,5 +1,67 @@
 .any-questions{
+    margin-top: 2rem;
+    padding: 5%;
+    text-align: start;
+
+    h2{
+        font-weight: normal;
+    }
+
     .img-and-text{
-        color: #A5A5A5;
+        text-align: start;
+        p{
+            color: #A5A5A5;
+            display: inline-block;
+            margin: auto;
+        }
+
+        img{
+            display: inline-block;
+        }
+    }
+
+    input[type="button"]{
+        background: #08A6E4;
+        width: 70%;
+        padding: 7%;
+        border: none;
+        color: white;
+        border-radius: 35px;
+        box-shadow: 5px 10px 14px 0px #07ACE64A;
+        margin-top: 3rem;
+        margin-left: 4rem;
+    }
+    input[type="checkbox"]{
+        margin-top: 5rem;
+        background-color: transparent;
+    }
+
+    input:checked{
+        background: none;
+    }
+
+    label{
+        font-size: 0.8rem;
+        color: #707070;
+    }
+
+    .form{
+        form{
+            margin-top: 1rem;
+            input{
+                border: none;
+                border-bottom: 2px solid #95989A;
+                display: block;
+                position: static;
+                margin-top: 1.5rem;
+            }
+
+            label{
+                color: #08A6E4;
+                display: block;
+                position: static;
+                margin-top: 2rem;
+            }
+        }
     }
 }
