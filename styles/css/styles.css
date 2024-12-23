@@ -6,6 +6,7 @@ header {
   box-shadow: 10px 2px 15px gray;
   padding: 2% 5%;
   top: 0;
+  background-color: white;
 }
 
 header h1 {
@@ -46,6 +47,116 @@ header h1 {
 }
 .container img {
   width: 100%;
+  height: auto;
+  text-align: center;
+}
+.container .most-popular {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.container .most-popular h2 {
+  font-weight: normal;
+}
+.container .most-popular .most-popular-element {
+  text-align: center;
+}
+.container .most-popular .most-popular-element img {
+  display: inline-block;
+  width: 15%;
+  position: absolute;
+  right: 7.2rem;
+}
+.container .most-popular .most-popular-element .eye-img {
+  display: inline-block;
+  width: 15%;
+  position: absolute;
+  right: 7.2rem;
+  margin-top: 5%;
+}
+.container .most-popular .most-popular-element p {
+  opacity: 0.5;
+}
+.container .most-popular .most-popular-element .pink-circle {
+  display: inline-block;
+  background: #FB3B64;
+  width: 20%;
+  height: 3.5rem;
+  border-radius: 100%;
+}
+.container .most-popular .most-popular-element .blue-circle {
+  display: inline-block;
+  background: #08A6E4;
+  width: 20%;
+  height: 3.5rem;
+  border-radius: 100%;
+}
+.container .most-popular .most-popular-element .green-circle {
+  display: inline-block;
+  background: #55DFB4;
+  width: 20%;
+  height: 3.5rem;
+  border-radius: 100%;
+}
+
+.benefits {
+  background: #F7F7F7;
+  padding: 10% 7%;
+}
+.benefits .benefits-element {
+  padding: 7%;
+  text-align: start;
+  margin-top: 5%;
+  background: #FFFFFF;
+  border-radius: 1%;
+}
+.benefits .benefits-element .circle-and-img-container {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-top: 5%;
+  height: 30%;
+}
+.benefits .benefits-element .circle-and-img-container img {
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+  margin-top: 5%;
+}
+.benefits .benefits-element .circle-and-img-container .pink-circle {
+  position: absolute;
+  right: 2rem;
+  background: #FB3B64;
+  width: 35%;
+  height: 5rem;
+  border-radius: 50%;
+  z-index: 1;
+  top: 0rem;
+}
+.benefits .benefits-element .circle-and-img-container .blue-circle {
+  position: absolute;
+  right: 4rem;
+  background: #08A6E4;
+  width: 50%;
+  height: 7rem;
+  border-radius: 100%;
+  z-index: 1;
+  top: 0rem;
+}
+.benefits .benefits-element-trumpet {
+  text-align: start;
+  background: #55DFB4;
+  border-radius: 1%;
+  height: 12rem;
+}
+.benefits .benefits-element-trumpet img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 2rem;
+}
+.benefits h2 {
+  font-weight: normal;
 }
 
 :root {
@@ -58,6 +169,7 @@ html {
   padding: 0;
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -66,12 +178,13 @@ body {
   font-family: "Raleway", serif;
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 main {
+  text-align: center;
   position: relative;
   top: 8rem;
-  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -17,5 +17,65 @@
 
     img{
         width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .most-popular{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+
+        h2{
+            font-weight: normal;
+        }
+
+        .most-popular-element{
+            text-align: center;
+
+            img{
+                display: inline-block;
+                width: 15%;
+                position: absolute;
+                right: 7.2rem;
+            }
+
+            .eye-img{
+                display: inline-block;
+                width: 15%;
+                position: absolute;
+                right: 7.2rem;
+                margin-top: 5%;
+            }
+
+            p{
+                opacity: 0.5;
+            }
+
+            .pink-circle{
+                display: inline-block;
+                background: #FB3B64;
+                width: 20%;
+                height: 3.5rem;
+                border-radius: 100%;
+            }
+
+            .blue-circle{
+                display: inline-block;
+                background: #08A6E4;
+                width: 20%;
+                height: 3.5rem;
+                border-radius: 100%;
+            }
+
+            .green-circle{
+                display: inline-block;
+                background: #55DFB4;
+                ;
+                width: 20%;
+                height: 3.5rem;
+                border-radius: 100%;
+            }
+        }
     }
 }
