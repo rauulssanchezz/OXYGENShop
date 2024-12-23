@@ -1,0 +1,63 @@
+.pricing{
+    padding: 5%;
+
+    h2{
+        font-weight: normal;
+    }
+
+    .pricing-element{
+        border: 2px solid #FB3B64;
+        border-radius: 18px;
+        padding: 2%;
+
+        .plan{
+            display: inline-block;
+            padding: 2%;
+            width: 45%;
+            p{
+                color: #FB3B64;
+            }
+        }
+
+        .characteristics{
+            display: inline-block;
+            padding: 2%;
+            width: 45%;
+
+            .characteristics-pair{
+                text-align: start;
+                .green-box{
+                    width: 11px;
+                    height: 11px;
+                    border-radius: 2px;
+                    border: 1px solid #55DFB4;
+                    background-image: url('../../assets/Vector\ 3.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    display: inline-block;
+                }
+
+                .pink-box{
+                    width: 11px;
+                    height: 11px;
+                    border-radius: 2px;
+                    border: 1px solid #EB476E;
+                    display: inline-block;
+                    text-align: center;
+
+                    p{
+                        color:#EB476E ;
+                        width: 11px;
+                        height: 11px;
+                        font-size: 11px;
+                    }
+                }
+
+                p{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

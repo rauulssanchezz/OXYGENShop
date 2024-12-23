@@ -159,6 +159,62 @@ header h1 {
   font-weight: normal;
 }
 
+.pricing {
+  padding: 5%;
+}
+.pricing h2 {
+  font-weight: normal;
+}
+.pricing .pricing-element {
+  border: 2px solid #FB3B64;
+  border-radius: 18px;
+  padding: 2%;
+}
+.pricing .pricing-element .plan {
+  display: inline-block;
+  padding: 2%;
+  width: 45%;
+}
+.pricing .pricing-element .plan p {
+  color: #FB3B64;
+}
+.pricing .pricing-element .characteristics {
+  display: inline-block;
+  padding: 2%;
+  width: 45%;
+}
+.pricing .pricing-element .characteristics .characteristics-pair {
+  text-align: start;
+}
+.pricing .pricing-element .characteristics .characteristics-pair .green-box {
+  width: 11px;
+  height: 11px;
+  border-radius: 2px;
+  border: 1px solid #55DFB4;
+  background-image: url("../../assets/Vector 3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+}
+.pricing .pricing-element .characteristics .characteristics-pair .pink-box {
+  width: 11px;
+  height: 11px;
+  border-radius: 2px;
+  border: 1px solid #EB476E;
+  display: inline-block;
+  text-align: center;
+}
+.pricing .pricing-element .characteristics .characteristics-pair .pink-box p {
+  color: #EB476E;
+  width: 11px;
+  height: 11px;
+  font-size: 11px;
+}
+.pricing .pricing-element .characteristics .characteristics-pair p {
+  display: inline-block;
+}
+
 :root {
   --primary-color: #08A6E4;
 }
@@ -175,10 +231,13 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Raleway", serif;
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+  font-family: "Open Sans", serif;
+}
+body h1, body h2, body h3, body h4 {
+  font-family: "Raleway", serif;
 }
 
 main {
