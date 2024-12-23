@@ -165,7 +165,64 @@ header h1 {
 .pricing h2 {
   font-weight: normal;
 }
-.pricing input[type=button] {
+.pricing .pricing-pink-element {
+  border: 2px solid #FB3B64;
+  border-radius: 18px;
+  padding: 2%;
+  font-size: 0.6rem;
+}
+.pricing .pricing-pink-element .plan {
+  display: inline-block;
+  padding: 2%;
+  width: 45%;
+  margin: auto;
+  font-size: 1rem;
+}
+.pricing .pricing-pink-element .plan h3 {
+  margin: 0;
+}
+.pricing .pricing-pink-element .plan p {
+  color: #FB3B64;
+  font-size: 3rem;
+  margin: 0;
+}
+.pricing .pricing-pink-element .characteristics {
+  display: inline-block;
+  padding: 2%;
+  width: 45%;
+}
+.pricing .pricing-pink-element .characteristics .characteristics-pair {
+  text-align: start;
+}
+.pricing .pricing-pink-element .characteristics .characteristics-pair .green-box {
+  width: 11px;
+  height: 11px;
+  border-radius: 2px;
+  border: 1px solid #55DFB4;
+  display: inline-block;
+  background-image: url("../../assets/Vector 3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.pricing .pricing-pink-element .characteristics .characteristics-pair .pink-box {
+  width: 11px;
+  height: 11px;
+  border-radius: 2px;
+  border: 1px solid #EB476E;
+  display: inline-block;
+  text-align: center;
+}
+.pricing .pricing-pink-element .characteristics .characteristics-pair .pink-box p {
+  color: #EB476E;
+  width: 11px;
+  height: 11px;
+  font-size: 11px;
+}
+.pricing .pricing-pink-element .characteristics .characteristics-pair p {
+  display: inline-block;
+}
+.pricing .pricing-pink-element input[type=button] {
   background: #EB476E;
   color: white;
   padding: 5%;
@@ -176,48 +233,48 @@ header h1 {
   position: relative;
   bottom: -1.5rem;
 }
-.pricing .pricing-element {
-  border: 2px solid #FB3B64;
+.pricing .pricing-blue-element {
+  margin-top: 3rem;
+  border: 2px solid #07ACE6;
   border-radius: 18px;
   padding: 2%;
   font-size: 0.6rem;
 }
-.pricing .pricing-element .plan {
+.pricing .pricing-blue-element .plan {
   display: inline-block;
   padding: 2%;
   width: 45%;
-  position: relative;
-  bottom: 3rem;
+  margin: auto;
   font-size: 1rem;
 }
-.pricing .pricing-element .plan h3 {
+.pricing .pricing-blue-element .plan h3 {
   margin: 0;
 }
-.pricing .pricing-element .plan p {
-  color: #FB3B64;
+.pricing .pricing-blue-element .plan p {
+  color: #07ACE6;
   font-size: 3rem;
   margin: 0;
 }
-.pricing .pricing-element .characteristics {
+.pricing .pricing-blue-element .characteristics {
   display: inline-block;
   padding: 2%;
   width: 45%;
 }
-.pricing .pricing-element .characteristics .characteristics-pair {
+.pricing .pricing-blue-element .characteristics .characteristics-pair {
   text-align: start;
 }
-.pricing .pricing-element .characteristics .characteristics-pair .green-box {
+.pricing .pricing-blue-element .characteristics .characteristics-pair .green-box {
   width: 11px;
   height: 11px;
   border-radius: 2px;
   border: 1px solid #55DFB4;
+  display: inline-block;
   background-image: url("../../assets/Vector 3.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  display: inline-block;
 }
-.pricing .pricing-element .characteristics .characteristics-pair .pink-box {
+.pricing .pricing-blue-element .characteristics .characteristics-pair .pink-box {
   width: 11px;
   height: 11px;
   border-radius: 2px;
@@ -225,14 +282,94 @@ header h1 {
   display: inline-block;
   text-align: center;
 }
-.pricing .pricing-element .characteristics .characteristics-pair .pink-box p {
+.pricing .pricing-blue-element .characteristics .characteristics-pair .pink-box p {
   color: #EB476E;
   width: 11px;
   height: 11px;
   font-size: 11px;
 }
-.pricing .pricing-element .characteristics .characteristics-pair p {
+.pricing .pricing-blue-element .characteristics .characteristics-pair p {
   display: inline-block;
+}
+.pricing .pricing-blue-element input[type=button] {
+  background: #07ACE6;
+  color: white;
+  padding: 5%;
+  border-radius: 23px;
+  border: none;
+  width: 8rem;
+  height: 2.5rem;
+  position: relative;
+  bottom: -1.5rem;
+}
+.pricing .pricing-green-element {
+  margin-top: 3rem;
+  border: 2px solid #55DFB4;
+  border-radius: 18px;
+  padding: 2%;
+  font-size: 0.6rem;
+}
+.pricing .pricing-green-element .plan {
+  display: inline-block;
+  padding: 2%;
+  width: 45%;
+  margin: auto;
+  font-size: 1rem;
+}
+.pricing .pricing-green-element .plan h3 {
+  margin: 0;
+}
+.pricing .pricing-green-element .plan p {
+  color: #55DFB4;
+  font-size: 3rem;
+  margin: 0;
+}
+.pricing .pricing-green-element .characteristics {
+  display: inline-block;
+  padding: 2%;
+  width: 45%;
+}
+.pricing .pricing-green-element .characteristics .characteristics-pair {
+  text-align: start;
+}
+.pricing .pricing-green-element .characteristics .characteristics-pair .green-box {
+  width: 11px;
+  height: 11px;
+  border-radius: 2px;
+  border: 1px solid #55DFB4;
+  display: inline-block;
+  background-image: url("../../assets/Vector 3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.pricing .pricing-green-element .characteristics .characteristics-pair .pink-box {
+  width: 11px;
+  height: 11px;
+  border-radius: 2px;
+  border: 1px solid #EB476E;
+  display: inline-block;
+  text-align: center;
+}
+.pricing .pricing-green-element .characteristics .characteristics-pair .pink-box p {
+  color: #EB476E;
+  width: 11px;
+  height: 11px;
+  font-size: 11px;
+}
+.pricing .pricing-green-element .characteristics .characteristics-pair p {
+  display: inline-block;
+}
+.pricing .pricing-green-element input[type=button] {
+  background: #55DFB4;
+  color: white;
+  padding: 5%;
+  border-radius: 23px;
+  border: none;
+  width: 8rem;
+  height: 2.5rem;
+  position: relative;
+  bottom: -1.5rem;
 }
 
 :root {
