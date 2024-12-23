@@ -215,9 +215,8 @@ header h1 {
 }
 .pricing .pricing-pink-element .characteristics .characteristics-pair .pink-box p {
   color: #EB476E;
-  width: 11px;
-  height: 11px;
   font-size: 11px;
+  margin: 0;
 }
 .pricing .pricing-pink-element .characteristics .characteristics-pair p {
   display: inline-block;
@@ -284,9 +283,8 @@ header h1 {
 }
 .pricing .pricing-blue-element .characteristics .characteristics-pair .pink-box p {
   color: #EB476E;
-  width: 11px;
-  height: 11px;
   font-size: 11px;
+  margin: 0;
 }
 .pricing .pricing-blue-element .characteristics .characteristics-pair p {
   display: inline-block;
@@ -353,9 +351,8 @@ header h1 {
 }
 .pricing .pricing-green-element .characteristics .characteristics-pair .pink-box p {
   color: #EB476E;
-  width: 11px;
-  height: 11px;
   font-size: 11px;
+  margin: 0;
 }
 .pricing .pricing-green-element .characteristics .characteristics-pair p {
   display: inline-block;
