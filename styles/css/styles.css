@@ -58,40 +58,47 @@ header h1 {
 .container .most-popular h2 {
   font-weight: normal;
 }
-.container .most-popular .most-popular-element {
+.container .most-popular .most-popular-element-container .most-popular-element {
   text-align: center;
 }
-.container .most-popular .most-popular-element img {
+.container .most-popular .most-popular-element-container .most-popular-element img {
   display: inline-block;
   width: 12%;
   position: absolute;
   right: 8.5rem;
 }
-.container .most-popular .most-popular-element .eye-img {
+.container .most-popular .most-popular-element-container .most-popular-element .eye-img {
   display: inline-block;
   width: 15%;
   position: absolute;
   right: 8.2rem;
   margin-top: 5%;
 }
-.container .most-popular .most-popular-element p {
+.container .most-popular .most-popular-element-container .most-popular-element .catalog-img {
+  display: inline-block;
+  width: 12%;
+  position: absolute;
+  right: 8.5rem;
+  margin-top: 2%;
+}
+.container .most-popular .most-popular-element-container .most-popular-element p {
   opacity: 0.5;
 }
-.container .most-popular .most-popular-element .pink-circle {
+.container .most-popular .most-popular-element-container .most-popular-element .pink-circle {
   display: inline-block;
   background: #FB3B64;
   width: 20%;
   height: 4rem;
   border-radius: 100%;
 }
-.container .most-popular .most-popular-element .blue-circle {
+.container .most-popular .most-popular-element-container .most-popular-element .blue-circle {
   display: inline-block;
   background: #08A6E4;
   width: 20%;
   height: 4rem;
   border-radius: 100%;
 }
-.container .most-popular .most-popular-element .green-circle {
+.container .most-popular .most-popular-element-container .most-popular-element .green-circle {
   display: inline-block;
   background: #55DFB4;
   width: 20%;
@@ -99,6 +106,150 @@ header h1 {
   border-radius: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .container .sell-more input {
+    padding: 5% 7%;
+    width: 80%;
+  }
+  .container .most-popular .most-popular-element-container .most-popular-element img {
+    width: 10%;
+    right: 16rem;
+  }
+  .container .most-popular .most-popular-element-container .most-popular-element .eye-img {
+    width: 12%;
+    right: 15.5rem;
+  }
+  .container .most-popular .most-popular-element-container .most-popular-element .catalog-img {
+    width: 10%;
+    right: 16rem;
+  }
+  .container .most-popular .most-popular-element-container .most-popular-element .pink-circle {
+    display: inline-block;
+    background: #FB3B64;
+    width: 18%;
+    height: 6rem;
+    border-radius: 100%;
+  }
+  .container .most-popular .most-popular-element-container .most-popular-element .blue-circle {
+    display: inline-block;
+    background: #08A6E4;
+    width: 18%;
+    height: 6rem;
+    border-radius: 100%;
+  }
+  .container .most-popular .most-popular-element-container .most-popular-element .green-circle {
+    display: inline-block;
+    background: #55DFB4;
+    width: 18%;
+    height: 6rem;
+    border-radius: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container .sell-more input {
+    padding: 3% 2%;
+    width: 55%;
+    font-size: 1rem;
+  }
+  .container .most-popular .most-popular-element-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .container .most-popular .most-popular-element-container .most-popular-element {
+    width: 30%;
+  }
+  .container .most-popular .most-popular-element-container .most-popular-element img {
+    width: 6%;
+    left: 12.5rem;
+  }
+  .container .most-popular .most-popular-element-container .most-popular-element .eye-img {
+    width: 8%;
+    right: 27rem;
+    left: auto;
+    margin-top: 2%;
+  }
+  .container .most-popular .most-popular-element-container .most-popular-element .catalog-img {
+    width: 6%;
+    right: 9rem;
+    left: auto;
+    margin-top: 1%;
+  }
+  .container .most-popular .most-popular-element-container .most-popular-element .pink-circle {
+    display: inline-block;
+    background: #FB3B64;
+    width: 30%;
+    height: 5.5rem;
+    border-radius: 100%;
+  }
+  .container .most-popular .most-popular-element-container .most-popular-element .blue-circle {
+    display: inline-block;
+    background: #08A6E4;
+    width: 30%;
+    height: 5.5rem;
+    border-radius: 100%;
+  }
+  .container .most-popular .most-popular-element-container .most-popular-element .green-circle {
+    display: inline-block;
+    background: #55DFB4;
+    width: 30%;
+    height: 5.5rem;
+    border-radius: 100%;
+  }
+}
+@media (min-width: 1980px) {
+  .container {
+    margin-top: 10%;
+  }
+  .container .sell-more input {
+    padding: 2% 2%;
+    width: 40%;
+    font-size: 2rem;
+  }
+  .container .most-popular .most-popular-element-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .container .most-popular .most-popular-element-container .most-popular-element {
+    width: 30%;
+  }
+  .container .most-popular .most-popular-element-container .most-popular-element img {
+    width: 3%;
+    left: 33rem;
+  }
+  .container .most-popular .most-popular-element-container .most-popular-element .eye-img {
+    width: 5%;
+    right: 73rem;
+    left: auto;
+    margin-top: 1%;
+  }
+  .container .most-popular .most-popular-element-container .most-popular-element .catalog-img {
+    width: 3%;
+    right: 26rem;
+    left: auto;
+    margin-top: 1%;
+  }
+  .container .most-popular .most-popular-element-container .most-popular-element .pink-circle {
+    display: inline-block;
+    background: #FB3B64;
+    width: 20%;
+    height: 8rem;
+    border-radius: 100%;
+  }
+  .container .most-popular .most-popular-element-container .most-popular-element .blue-circle {
+    display: inline-block;
+    background: #08A6E4;
+    width: 20%;
+    height: 8rem;
+    border-radius: 100%;
+  }
+  .container .most-popular .most-popular-element-container .most-popular-element .green-circle {
+    display: inline-block;
+    background: #55DFB4;
+    width: 20%;
+    height: 8rem;
+    border-radius: 100%;
+  }
+}
 .benefits {
   background: #F7F7F7;
   padding: 10% 7%;
@@ -133,7 +284,37 @@ header h1 {
   z-index: 1;
   top: 0rem;
 }
-.benefits .benefits-element .circle-and-img-container .blue-circle {
+.benefits .benefits-element-iphone {
+  padding: 7%;
+  text-align: start;
+  margin-top: 5%;
+  background: #FFFFFF;
+  border-radius: 1%;
+}
+.benefits .benefits-element-iphone .circle-and-img-container {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-top: 5%;
+  height: 30%;
+}
+.benefits .benefits-element-iphone .circle-and-img-container img {
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+  margin-top: 5%;
+}
+.benefits .benefits-element-iphone .circle-and-img-container .pink-circle {
+  position: absolute;
+  right: 2rem;
+  background: #FB3B64;
+  width: 35%;
+  height: 5rem;
+  border-radius: 50%;
+  z-index: 1;
+  top: 0rem;
+}
+.benefits .benefits-element-iphone .blue-circle {
   position: absolute;
   right: 4rem;
   background: #08A6E4;
@@ -158,7 +339,187 @@ header h1 {
 .benefits h2 {
   font-weight: normal;
 }
+.benefits .benefits-element-bottom {
+  padding: 7%;
+  text-align: start;
+  margin-top: 5%;
+  background: #FFFFFF;
+  border-radius: 1%;
+}
+.benefits .benefits-element-bottom .circle-and-img-container {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-top: 5%;
+  height: 30%;
+}
+.benefits .benefits-element-bottom .circle-and-img-container img {
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+  margin-top: 5%;
+}
+.benefits .benefits-element-bottom .circle-and-img-container .pink-circle {
+  position: absolute;
+  right: 2rem;
+  background: #FB3B64;
+  width: 35%;
+  height: 5rem;
+  border-radius: 50%;
+  z-index: 1;
+  top: 0rem;
+}
 
+@media screen and (min-width: 768px) {
+  .benefits {
+    padding: 7% 7%;
+  }
+  .benefits .benefits-element .circle-and-img-container img {
+    margin-top: 3%;
+  }
+  .benefits .benefits-element .circle-and-img-container .pink-circle {
+    right: 8rem;
+    width: 25%;
+    height: 5rem;
+    top: 0rem;
+  }
+  .benefits .benefits-element .circle-and-img-container .blue-circle {
+    right: 11rem;
+    background: #08A6E4;
+    width: 30%;
+    height: 7rem;
+    top: 0rem;
+  }
+  .benefits .benefits-element-trumpet {
+    text-align: start;
+    background: #55DFB4;
+    border-radius: 1%;
+    height: 12rem;
+  }
+  .benefits .benefits-element-trumpet img {
+    width: 70%;
+    height: 70%;
+    position: relative;
+    top: 3rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding: 5% 7%;
+  }
+  .benefits .benefits-element {
+    padding: 4%;
+  }
+  .benefits .benefits-element .circle-and-img-container {
+    margin-top: 3%;
+  }
+  .benefits .benefits-element .circle-and-img-container img {
+    margin-top: 1%;
+  }
+  .benefits .benefits-element .circle-and-img-container .pink-circle {
+    right: 18rem;
+    width: 16%;
+    height: 5rem;
+    top: 0rem;
+  }
+  .benefits .benefits-element .circle-and-img-container .blue-circle {
+    right: 20rem;
+    background: #08A6E4;
+    width: 20%;
+    height: 7rem;
+    top: 0rem;
+  }
+  .benefits .benefits-element-trumpet {
+    text-align: start;
+    background: #55DFB4;
+    border-radius: 1%;
+    height: 12rem;
+  }
+  .benefits .benefits-element-trumpet img {
+    width: 30%;
+    height: auto;
+    position: relative;
+    margin-left: 30%;
+  }
+}
+@media screen and (min-width: 1980px) {
+  .benefits {
+    padding: 1% 15%;
+  }
+  .benefits .benefits-element {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 5%;
+  }
+  .benefits .benefits-element .benefits-element-text-mac {
+    border-bottom: solid 4px #FB3B64;
+  }
+  .benefits .benefits-element .circle-and-img-container {
+    margin-top: 1%;
+    height: 100%;
+  }
+  .benefits .benefits-element .circle-and-img-container img {
+    margin-top: 1%;
+    width: 60%;
+  }
+  .benefits .benefits-element .circle-and-img-container .pink-circle {
+    right: 8rem;
+    width: 30%;
+    height: 10rem;
+    top: 0rem;
+    border-radius: 10%;
+  }
+  .benefits .benefits-element-iphone {
+    display: flex;
+    align-items: center;
+  }
+  .benefits .benefits-element-iphone .benefits-element-text-iphone {
+    border-bottom: solid 4px #08A6E4;
+  }
+  .benefits .benefits-element-iphone .circle-and-img-container {
+    margin: 0;
+    height: 100%;
+  }
+  .benefits .benefits-element-iphone .circle-and-img-container img {
+    margin-top: 0;
+    width: 60%;
+  }
+  .benefits .benefits-element-iphone .circle-and-img-container .blue-circle {
+    right: 8rem;
+    background: #08A6E4;
+    width: 80%;
+    height: 30rem;
+    bottom: 20rem;
+  }
+  .benefits .bottom-benefits {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 2%;
+  }
+  .benefits .bottom-benefits .benefits-element-bottom {
+    text-align: start;
+    padding: 5%;
+    width: 50%;
+    height: 100%;
+  }
+  .benefits .bottom-benefits .benefits-element-bottom p {
+    border-bottom: solid 4px #55DFB4;
+    padding-bottom: 3%;
+  }
+  .benefits .bottom-benefits .benefits-element-trumpet {
+    margin-top: 5%;
+    text-align: start;
+    background: #55DFB4;
+    border-radius: 1%;
+    width: 35%;
+    height: 29.3rem;
+  }
+  .benefits .bottom-benefits .benefits-element-trumpet img {
+    width: 60%;
+    height: auto;
+    position: relative;
+  }
+}
 .pricing {
   padding: 5%;
 }
@@ -401,10 +762,6 @@ header h1 {
 }
 .any-questions input[type=checkbox] {
   margin-top: 5rem;
-  background-color: transparent;
-}
-.any-questions input:checked {
-  background: none;
 }
 .any-questions label {
   font-size: 0.8rem;
@@ -494,6 +851,12 @@ main {
   text-align: center;
   position: relative;
   top: 8rem;
+}
+
+@media screen and (min-width: 1980px) {
+  body {
+    font-size: 1.8rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

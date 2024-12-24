@@ -2,7 +2,7 @@
     background: #F7F7F7;
     padding: 10% 7%;
 
-    .benefits-element{
+    @mixin benefit-element(){
         padding: 7%;
         text-align: start;
         margin-top: 5%;
@@ -33,17 +33,24 @@
                 z-index: 1;
                 top: 0rem;
             }
+        }
+    }
 
-            .blue-circle{
-                position: absolute;
-                right: 4rem;
-                background: #08A6E4;
-                width: 50%;
-                height: 7rem;
-                border-radius: 100%;
-                z-index: 1;
-                top: 0rem;
-            }
+    .benefits-element{
+        @include benefit-element();
+    }
+
+    .benefits-element-iphone{
+        @include benefit-element();
+        .blue-circle{
+            position: absolute;
+            right: 4rem;
+            background: #08A6E4;
+            width: 50%;
+            height: 7rem;
+            border-radius: 100%;
+            z-index: 1;
+            top: 0rem;
         }
     }
 
@@ -64,5 +71,184 @@
     h2{
         font-weight: normal;
     }
+    .benefits-element-bottom{
+        @include benefit-element();
+    }
 }
 
+
+@media  screen and (min-width: 768px){
+
+    .benefits {
+        padding: 7% 7%;
+        .benefits-element{
+    
+            .circle-and-img-container{
+    
+                img{
+                    margin-top: 3%;
+                }
+    
+                .pink-circle{
+                    right: 8rem;
+                    width: 25%;
+                    height: 5rem;
+                    top: 0rem;
+                }
+    
+                .blue-circle{
+                    right: 11rem;
+                    background: #08A6E4;
+                    width: 30%;
+                    height: 7rem;
+                    top: 0rem;
+                }
+            }
+        }
+        .benefits-element-trumpet{
+            text-align: start;
+            background: #55DFB4;
+            border-radius: 1%;
+            height: 12rem;
+    
+            img{
+                width: 70%;
+                height: 70%;
+                position: relative;
+                top: 3rem;
+            }
+        }
+    }
+} 
+
+@media  screen and (min-width: 1200px){
+
+    .benefits {
+        padding: 5% 7%;
+        .benefits-element{
+
+            padding: 4%;
+
+            .circle-and-img-container{
+                margin-top: 3%;
+                img{
+                    margin-top: 1%;
+                }
+    
+                .pink-circle{
+                    right: 18rem;
+                    width: 16%;
+                    height: 5rem;
+                    top: 0rem;
+                }
+    
+                .blue-circle{
+                    right: 20rem;
+                    background: #08A6E4;
+                    width: 20%;
+                    height: 7rem;
+                    top: 0rem;
+                }
+            }
+        }
+        .benefits-element-trumpet{
+            text-align: start;
+            background: #55DFB4;
+            border-radius: 1%;
+            height: 12rem;
+    
+            img{
+                width: 30%;
+                height: auto;
+                position: relative;
+                margin-left: 30%;
+            }
+        }
+    }
+} 
+
+@media  screen and (min-width: 1980px){
+
+    .benefits {
+        padding: 1% 15%;
+
+        .benefits-element{
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 5%;
+
+            .benefits-element-text-mac{
+                border-bottom: solid 4px #FB3B64;
+            }
+
+            .circle-and-img-container{
+                margin-top: 1%;
+                height: 100%;
+                img{
+                    margin-top: 1%;
+                    width: 60%;
+                }
+    
+                .pink-circle{
+                    right: 8rem;
+                    width: 30%;
+                    height: 10rem;
+                    top: 0rem;
+                    border-radius: 10%;
+                }
+            }
+        }
+
+        .benefits-element-iphone{
+            display: flex;
+            align-items: center;
+            .benefits-element-text-iphone{
+                border-bottom: solid 4px #08A6E4;
+            }
+            .circle-and-img-container{
+                margin: 0;
+                height: 100%;
+                img{
+                    margin-top: 0;
+                    width: 60%;
+                }
+                .blue-circle{
+                    right: 8rem;
+                    background: #08A6E4;
+                    width: 80%;
+                    height: 30rem;
+                    bottom: 20rem;
+                }
+            }
+        }
+           .bottom-benefits{
+                display: flex;
+                justify-content: space-between;
+                padding: 5% 2%;
+                .benefits-element-bottom{
+                    text-align: start;
+                    padding: 5%;
+                    width: 50%;
+                    height: 100%;
+                     p{
+                        border-bottom: solid 4px #55DFB4;
+                        padding-bottom: 3%;
+                     }
+                }
+                .benefits-element-trumpet{
+                    margin-top: 5%;
+                    text-align: start;
+                    background: #55DFB4;
+                    border-radius: 1%;
+                    width: 35%;
+                    height: 29.3rem;
+            
+                    img{
+                        width: 60%;
+                        height: auto;
+                        position: relative;
+                    }
+                }
+            }
+        }
+    } 

@@ -37,39 +37,222 @@
         h2{
             font-weight: normal;
         }
+        .most-popular-element-container{
+            .most-popular-element{
+                text-align: center;
 
-        .most-popular-element{
-            text-align: center;
+                img{
+                    display: inline-block;
+                    width: 12%;
+                    position: absolute;
+                    right: 8.5rem;
+                }
 
-            img{
-                display: inline-block;
-                width: 12%;
-                position: absolute;
-                right: 8.5rem;
+                .eye-img{
+                    display: inline-block;
+                    width: 15%;
+                    position: absolute;
+                    right: 8.2rem;
+                    margin-top: 5%;
+                }
+
+                .catalog-img{
+                    display: inline-block;
+                    width: 12%;
+                    position: absolute;
+                    right: 8.5rem;
+                    margin-top: 2%;
+                }
+
+                p{
+                    opacity: 0.5;
+                }
+
+                .pink-circle{
+                    @include circle(#FB3B64);
+                }
+
+                .blue-circle{
+                    @include circle(#08A6E4);
+                }
+
+                .green-circle{
+                    @include circle(#55DFB4);
+                }
             }
+        }
+    }
+}
 
-            .eye-img{
-                display: inline-block;
-                width: 15%;
-                position: absolute;
-                right: 8.2rem;
-                margin-top: 5%;
+@media screen and (min-width: 768px){   
+
+    .container{
+        .sell-more{
+            input{
+                padding:  5% 7%;
+                width: 80%;
             }
+        }
 
-            p{
-                opacity: 0.5;
+        .most-popular{
+            .most-popular-element-container{
+                .most-popular-element{
+                    img{
+                        width: 10%;
+                        right: 16rem;
+                    }
+    
+                    .eye-img{
+                        width: 12%;
+                        right: 15.5rem;
+                    }
+    
+                    .catalog-img{
+                        width: 10%;
+                        right: 16rem;
+                    }
+    
+                    @mixin circle($color){
+                        display: inline-block;
+                        background: $color;
+                        width: 18%;
+                        height: 6rem;
+                        border-radius: 100%;
+                    }
+    
+                    .pink-circle{
+                        @include circle(#FB3B64);
+                    }
+    
+                    .blue-circle{
+                        @include circle(#08A6E4);
+                    }
+    
+                    .green-circle{
+                        @include circle(#55DFB4);
+                    }
+                }
             }
+        }
+    }
+}
 
-            .pink-circle{
-                @include circle(#FB3B64);
+@media screen and (min-width: 1200px){
+    .container{
+        .sell-more{
+            input{
+                padding:  3% 2%;
+                width: 55%;
+                font-size: 1rem;
             }
+        }
 
-            .blue-circle{
-                @include circle(#08A6E4);
+        .most-popular{
+            .most-popular-element-container{
+                display: flex;
+                justify-content: space-around;
+                .most-popular-element{
+                    width: 30%;
+                    img{
+                        width: 6%;
+                        left: 12.5rem;
+                    }
+    
+                    .eye-img{
+                        width: 8%;
+                        right: 27rem;
+                        left: auto;
+                        margin-top: 2%;
+                    }
+    
+                    .catalog-img{
+                        width: 6%;
+                        right: 9rem;
+                        left: auto;
+                        margin-top: 1%;
+                    }
+    
+                    @mixin circle($color){
+                        display: inline-block;
+                        background: $color;
+                        width: 30%;
+                        height: 5.5rem;
+                        border-radius: 100%;
+                    }
+    
+                    .pink-circle{
+                        @include circle(#FB3B64);
+                    }
+    
+                    .blue-circle{
+                        @include circle(#08A6E4);
+                    }
+    
+                    .green-circle{
+                        @include circle(#55DFB4);
+                    }
+                }
             }
+        }
+    }
+} 
 
-            .green-circle{
-                @include circle(#55DFB4);
+@media  (min-width:1980px) {
+    .container{
+        margin-top: 10%;
+        .sell-more{
+            input{
+                padding:  2% 2%;
+                width: 40%;
+                font-size: 2rem;
+            }
+        }
+
+        .most-popular{
+            .most-popular-element-container{
+                display: flex;
+                justify-content: space-around;
+                .most-popular-element{
+                    width: 30%;
+                    img{
+                        width: 3%;
+                        left: 33rem;
+                    }
+    
+                    .eye-img{
+                        width: 5%;
+                        right: 73rem;
+                        left: auto;
+                        margin-top: 1%;
+                    }
+    
+                    .catalog-img{
+                        width: 3%;
+                        right: 26rem;
+                        left: auto;
+                        margin-top: 1%;
+                    }
+    
+                    @mixin circle($color){
+                        display: inline-block;
+                        background: $color;
+                        width: 20%;
+                        height: 8rem;
+                        border-radius: 100%;
+                    }
+    
+                    .pink-circle{
+                        @include circle(#FB3B64);
+                    }
+    
+                    .blue-circle{
+                        @include circle(#08A6E4);
+                    }
+    
+                    .green-circle{
+                        @include circle(#55DFB4);
+                    }
+                }
             }
         }
     }
