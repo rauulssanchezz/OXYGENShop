@@ -14,7 +14,7 @@
         width: 8rem;
         height: 2.5rem;
         position: relative;
-        bottom: -1.5rem;
+        top: -1.5rem;
     }
 
     @mixin box($color){
@@ -85,29 +85,51 @@
         }
     }
 
-    .pricing-pink-element{
-        @include pricing-element(#FB3B64,#FB3B64);
-
+    @mixin pricing-element-container($element-color,$input-color){
+        .pricing-pink-element{
+            @include pricing-element($element-color,$element-color);
+        }
         input[type="button"]{
-            @include input(#EB476E);
+            @include input($input-color);
         }
     }
 
-    .pricing-blue-element{
-        margin-top: 3rem;
-        @include pricing-element(#07ACE6,#07ACE6);
-
-        input[type="button"]{
-            @include input(#07ACE6);
-        }
+    .pricing-element-red-container{
+        @include pricing-element-container(#FB3B64,#EB476E);
     }
 
-    .pricing-green-element{
-        margin-top: 3rem;
-        @include pricing-element(#55DFB4,#55DFB4);
+    .pricing-element-blue-container{
+        @include pricing-element-container(#07ACE6,#07ACE6);
+    }
 
+    .pricing-element-green-container{
+        @include pricing-element-container(#55DFB4,#55DFB4);
         input[type="button"]{
-            @include input(#55DFB4);
+            bottom: 3rem;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .pricing{
+        padding: 5% 10%;
+        @mixin pricing-element($border, $color){
+            .pricing-element-container{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .characteristics{
+                .characteristics-pair{
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .pricing-pink-element{
+            @include pricing-element(#FB3B64,#FB3B64);
         }
     }
 }
