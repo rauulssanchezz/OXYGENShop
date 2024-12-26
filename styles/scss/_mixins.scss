@@ -50,8 +50,8 @@
     display: inline-block;
 }
 
-@mixin pricing-element($border, $color){
-    border: 2px solid $border;
+@mixin pricing-element($color){
+    border: 2px solid $color;
     border-radius: 18px;
     padding: 2%;
     font-size: 0.6rem;
@@ -110,12 +110,15 @@
     }
 }
 
-@mixin pricing-element-container($element-color,$input-color){
+@mixin pricing-element-container($color){
+    margin-top: 15%;
     .pricing-element{
-        @include pricing-element($element-color,$element-color);
+        @include pricing-element($color);
     }
     input[type="button"]{
-        @include input($input-color);
+        @include input($color);
+        position: relative;
+        bottom: -1.6rem;
     }
 }
 
@@ -139,6 +142,84 @@
         .characteristics-pair{
             p{
                 font-size: 1rem;
+            }
+        }
+    }
+}
+
+@mixin pricing-element-container-1200($color){
+    @include pricing-element-container($color);
+    margin-top: 5%;
+    width: 30%;
+    input[type="button"]{
+        bottom: -1.6rem;
+    }
+
+    .pricing-element{
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s ease-in;
+        .characteristics-pair{
+            width: 10rem;
+        }
+    }
+
+    .pricing-element:hover{
+        transform: scale(1.05);
+        box-shadow: 0px 0px 20px 0px $color;
+    }
+}
+
+@mixin pricing-element-container-1980(){
+    width: 20%;
+    margin-top: 5%;
+    input[type="button"]{
+        width: 50%;
+        height: 5rem;
+        border-radius: 100rem;
+        padding: 0;
+        font-size: 2rem;
+        bottom: -3rem;
+    }
+    .pricing-element{
+        font-size: 2rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .plan{
+            font-size: 2rem;
+        }
+        .characteristics{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .characteristics-pair{
+                width: 60%;
+                .pink-box{
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    p{
+                        font-size: 2rem;
+                    }
+                }
+
+                .green-box{
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+                p{
+                    font-size: 2rem;
+                }
             }
         }
     }

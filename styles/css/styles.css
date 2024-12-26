@@ -542,10 +542,13 @@ header h1 {
     height: 100%;
   }
   .benefits .benefits-element-iphone .circle-and-img-container img {
-    margin-top: 0;
-    width: 60%;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 100%;
   }
   .benefits .benefits-element-iphone .circle-and-img-container .blue-circle {
+    position: relative;
     right: 8rem;
     background: #08A6E4;
     width: 80%;
@@ -586,6 +589,9 @@ header h1 {
 }
 .pricing h2 {
   font-weight: normal;
+}
+.pricing .pricing-element-red-container {
+  margin-top: 15%;
 }
 .pricing .pricing-element-red-container .pricing-element {
   border: 2px solid #FB3B64;
@@ -645,7 +651,7 @@ header h1 {
   display: inline-block;
 }
 .pricing .pricing-element-red-container input[type=button] {
-  background: #EB476E;
+  background: #FB3B64;
   color: white;
   border-radius: 23px;
   border: none;
@@ -653,9 +659,11 @@ header h1 {
   height: 2.5rem;
   position: relative;
   text-align: center;
+  position: relative;
+  bottom: -1.6rem;
 }
-.pricing .pricing-element-red-container input[type=button] {
-  top: -1.5rem;
+.pricing .pricing-element-blue-container {
+  margin-top: 15%;
 }
 .pricing .pricing-element-blue-container .pricing-element {
   border: 2px solid #07ACE6;
@@ -723,8 +731,6 @@ header h1 {
   height: 2.5rem;
   position: relative;
   text-align: center;
-}
-.pricing .pricing-element-blue-container input[type=button] {
   position: relative;
   bottom: -1.6rem;
 }
@@ -797,72 +803,13 @@ header h1 {
   height: 2.5rem;
   position: relative;
   text-align: center;
-}
-.pricing .pricing-element-green-container input[type=button] {
+  position: relative;
   bottom: -1.6rem;
 }
 
 @media screen and (min-width: 768px) {
   .pricing {
     padding: 5% 20%;
-  }
-  .pricing .pricing-pink-element {
-    border: 2px solid #FB3B64;
-    border-radius: 18px;
-    padding: 2%;
-    font-size: 0.6rem;
-    width: 100%;
-    padding: 0;
-  }
-  .pricing .pricing-pink-element .plan {
-    display: inline-block;
-    padding: 2%;
-    width: 45%;
-    margin: auto;
-    font-size: 1rem;
-  }
-  .pricing .pricing-pink-element .plan h3 {
-    margin: 0;
-  }
-  .pricing .pricing-pink-element .plan p {
-    color: #FB3B64;
-    font-size: 3rem;
-    margin: 0;
-  }
-  .pricing .pricing-pink-element .characteristics {
-    display: inline-block;
-    padding: 2%;
-    width: 45%;
-  }
-  .pricing .pricing-pink-element .characteristics .characteristics-pair {
-    text-align: start;
-  }
-  .pricing .pricing-pink-element .characteristics .characteristics-pair .green-box {
-    width: 11px;
-    height: 11px;
-    border-radius: 2px;
-    border: 1px solid #55DFB4;
-    display: inline-block;
-    background-image: url("../../assets/Vector 3.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
-  .pricing .pricing-pink-element .characteristics .characteristics-pair .pink-box {
-    width: 11px;
-    height: 11px;
-    border-radius: 2px;
-    border: 1px solid #EB476E;
-    display: inline-block;
-    text-align: center;
-  }
-  .pricing .pricing-pink-element .characteristics .characteristics-pair .pink-box p {
-    color: #EB476E;
-    font-size: 11px;
-    margin: 0;
-  }
-  .pricing .pricing-pink-element .characteristics .characteristics-pair p {
-    display: inline-block;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -878,8 +825,9 @@ header h1 {
     background: transparent;
   }
   .pricing .pricing-elements .pricing-element-green-container {
-    margin-top: 0;
-    width: 25%;
+    margin-top: 15%;
+    margin-top: 5%;
+    width: 30%;
   }
   .pricing .pricing-elements .pricing-element-green-container .pricing-element {
     border: 2px solid #55DFB4;
@@ -947,6 +895,8 @@ header h1 {
     height: 2.5rem;
     position: relative;
     text-align: center;
+    position: relative;
+    bottom: -1.6rem;
   }
   .pricing .pricing-elements .pricing-element-green-container input[type=button] {
     bottom: -1.6rem;
@@ -959,19 +909,19 @@ header h1 {
     align-items: center;
     width: 100%;
     height: 100%;
-    transition: width 0.3s ease-in, height 0.3s ease-in;
+    transition: transform 0.3s ease-in;
   }
   .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics-pair {
     width: 10rem;
   }
   .pricing .pricing-elements .pricing-element-green-container .pricing-element:hover {
-    width: 105%;
-    height: 105%;
+    transform: scale(1.05);
     box-shadow: 0px 0px 20px 0px #55DFB4;
   }
   .pricing .pricing-elements .pricing-element-red-container {
-    width: 25%;
-    height: 29rem;
+    margin-top: 15%;
+    margin-top: 5%;
+    width: 30%;
   }
   .pricing .pricing-elements .pricing-element-red-container .pricing-element {
     border: 2px solid #FB3B64;
@@ -1031,7 +981,7 @@ header h1 {
     display: inline-block;
   }
   .pricing .pricing-elements .pricing-element-red-container input[type=button] {
-    background: #EB476E;
+    background: #FB3B64;
     color: white;
     border-radius: 23px;
     border: none;
@@ -1039,9 +989,11 @@ header h1 {
     height: 2.5rem;
     position: relative;
     text-align: center;
+    position: relative;
+    bottom: -1.6rem;
   }
   .pricing .pricing-elements .pricing-element-red-container input[type=button] {
-    top: -1.5rem;
+    bottom: -1.6rem;
   }
   .pricing .pricing-elements .pricing-element-red-container .pricing-element {
     font-size: 1rem;
@@ -1051,18 +1003,22 @@ header h1 {
     align-items: center;
     width: 100%;
     height: 100%;
-    transition: width 0.3s ease-in, height 0.3s ease-in;
+    transition: transform 0.3s ease-in;
   }
   .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics-pair {
     width: 10rem;
   }
   .pricing .pricing-elements .pricing-element-red-container .pricing-element:hover {
-    width: 105%;
-    height: 105%;
+    transform: scale(1.05);
     box-shadow: 0px 0px 20px 0px #FB3B64;
   }
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element .plan h4 {
+    visibility: hidden;
+  }
   .pricing .pricing-elements .pricing-element-blue-container {
-    width: 25%;
+    margin-top: 15%;
+    margin-top: 5%;
+    width: 30%;
   }
   .pricing .pricing-elements .pricing-element-blue-container .pricing-element {
     border: 2px solid #07ACE6;
@@ -1130,9 +1086,10 @@ header h1 {
     height: 2.5rem;
     position: relative;
     text-align: center;
+    position: relative;
+    bottom: -1.6rem;
   }
   .pricing .pricing-elements .pricing-element-blue-container input[type=button] {
-    position: relative;
     bottom: -1.6rem;
   }
   .pricing .pricing-elements .pricing-element-blue-container .pricing-element {
@@ -1143,14 +1100,13 @@ header h1 {
     align-items: center;
     width: 100%;
     height: 100%;
-    transition: width 0.3s ease-in, height 0.3s ease-in;
+    transition: transform 0.3s ease-in;
   }
   .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics-pair {
     width: 10rem;
   }
   .pricing .pricing-elements .pricing-element-blue-container .pricing-element:hover {
-    width: 105%;
-    height: 105%;
+    transform: scale(1.05);
     box-shadow: 0px 0px 20px 0px #07ACE6;
   }
 }
@@ -1158,9 +1114,26 @@ header h1 {
   .pricing {
     font-size: 2rem;
   }
+  .pricing .pricing-elements .pricing-element-red-container {
+    width: 20%;
+    margin-top: 5%;
+  }
+  .pricing .pricing-elements .pricing-element-red-container input[type=button] {
+    width: 50%;
+    height: 5rem;
+    border-radius: 100rem;
+    padding: 0;
+    font-size: 2rem;
+    bottom: -3rem;
+  }
   .pricing .pricing-elements .pricing-element-red-container .pricing-element {
     font-size: 2rem;
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .pricing .pricing-elements .pricing-element-red-container .pricing-element .plan {
     font-size: 2rem;
@@ -1170,13 +1143,17 @@ header h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
   .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair {
-    width: 100%;
+    width: 60%;
   }
   .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair .pink-box {
     width: 1.5rem;
     height: 1.5rem;
+  }
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair .pink-box p {
+    font-size: 2rem;
   }
   .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair .green-box {
     width: 1.5rem;
@@ -1185,18 +1162,39 @@ header h1 {
   .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair p {
     font-size: 2rem;
   }
+  .pricing .pricing-elements .pricing-element-blue-container {
+    width: 20%;
+    margin-top: 5%;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container input[type=button] {
+    width: 50%;
+    height: 5rem;
+    border-radius: 100rem;
+    padding: 0;
+    font-size: 2rem;
+    bottom: -3rem;
+  }
   .pricing .pricing-elements .pricing-element-blue-container .pricing-element {
     font-size: 2rem;
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .pricing .pricing-elements .pricing-element-blue-container .pricing-element .plan {
     font-size: 2rem;
   }
   .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair {
-    width: 100%;
+    width: 60%;
   }
   .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair .pink-box {
     width: 1.5rem;
@@ -1212,22 +1210,46 @@ header h1 {
   .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair p {
     font-size: 2rem;
   }
+  .pricing .pricing-elements .pricing-element-green-container {
+    width: 20%;
+    margin-top: 5%;
+  }
+  .pricing .pricing-elements .pricing-element-green-container input[type=button] {
+    width: 50%;
+    height: 5rem;
+    border-radius: 100rem;
+    padding: 0;
+    font-size: 2rem;
+    bottom: -3rem;
+  }
   .pricing .pricing-elements .pricing-element-green-container .pricing-element {
     font-size: 2rem;
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .pricing .pricing-elements .pricing-element-green-container .pricing-element .plan {
     font-size: 2rem;
   }
   .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair {
-    width: 100%;
+    width: 60%;
   }
   .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair .pink-box {
     width: 1.5rem;
     height: 1.5rem;
+  }
+  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair .pink-box p {
+    font-size: 2rem;
   }
   .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair .green-box {
     width: 1.5rem;
@@ -1339,20 +1361,25 @@ header h1 {
 }
 @media screen and (min-width: 1980px) {
   .any-questions {
-    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 2rem;
+  }
+  .any-questions h2 {
+    font-size: 4rem;
   }
   .any-questions .any-questions-container .form form label {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .any-questions .any-questions-container .form label {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .any-questions input[type=button] {
-    font-size: 1.5rem;
-    width: 30%;
+    font-size: 2rem;
+    width: 20%;
     padding: 2% 0;
     border-radius: 10rem;
-    margin-left: 75rem;
   }
 }
 footer {

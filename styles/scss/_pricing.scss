@@ -8,37 +8,21 @@
     }
 
     .pricing-element-red-container{
-        @include pricing-element-container(#FB3B64,#EB476E);
-        input[type="button"]{
-            top: -1.5rem;
-        }
+        @include pricing-element-container(#FB3B64);
     }
 
     .pricing-element-blue-container{
-        @include pricing-element-container(#07ACE6,#07ACE6);
-        input[type="button"]{
-            position: relative;
-            bottom: -1.6rem;
-        }
+        @include pricing-element-container(#07ACE6);
     }
 
     .pricing-element-green-container{
-        margin-top: 15%;
-        @include pricing-element-container(#55DFB4,#55DFB4);
-        input[type="button"]{
-            bottom: -1.6rem;
-        }
+        @include pricing-element-container(#55DFB4);
     }
 }
 
 @media screen and (min-width: 768px){
     .pricing{
         padding: 5% 20%;
-
-        .pricing-pink-element{
-            @include pricing-element(#FB3B64,#FB3B64);
-            padding: 0;
-        }
     }
 }
 
@@ -54,91 +38,25 @@
             width: 100%;
             background: transparent;
 
+            
+
             .pricing-element-green-container{
-                margin-top: 0;
-                width: 25%;
-                @include pricing-element-container(#55DFB4,#55DFB4);
-                input[type="button"]{
-                    bottom: -1.6rem;
-                }
-
-                .pricing-element{
-                    font-size: 1rem;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    width: 100%;
-                    height: 100%;
-                    transition: width 0.3s ease-in, height 0.3s ease-in;
-                    .characteristics-pair{
-                        width: 10rem;
-                    }
-                }
-
-                .pricing-element:hover{
-                    width: 105%;
-                    height: 105%;
-                    box-shadow: 0px 0px 20px 0px #55DFB4;
-                }
+                @include pricing-element-container-1200(#55DFB4);
             }
 
             .pricing-element-red-container{
-                width: 25%;
-                height: 29rem;
-                @include pricing-element-container(#FB3B64,#EB476E);
-                input[type="button"]{
-                    top: -1.5rem;
-                }
-
+                @include pricing-element-container-1200(#FB3B64);
                 .pricing-element{
-                    font-size: 1rem;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    width: 100%;
-                    height: 100%;
-                    transition: width 0.3s ease-in, height 0.3s ease-in;
-                    .characteristics-pair{
-                        width: 10rem;
+                    .plan{
+                        h4{
+                            visibility: hidden;
+                        }
                     }
-                }
-
-                .pricing-element:hover{
-                    width: 105%;
-                    height: 105%;
-                    box-shadow: 0px 0px 20px 0px #FB3B64;
                 }
             }
         
             .pricing-element-blue-container{
-                width: 25%;
-                @include pricing-element-container(#07ACE6,#07ACE6);
-                input[type="button"]{
-                    position: relative;
-                    bottom: -1.6rem;
-                }
-
-                .pricing-element{
-                    font-size: 1rem;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    width: 100%;
-                    height: 100%;
-                    transition: width 0.3s ease-in, height 0.3s ease-in;
-                    .characteristics-pair{
-                        width: 10rem;
-                    }
-                }
-
-                .pricing-element:hover{
-                    width: 105%;
-                    height: 105%;
-                    box-shadow: 0px 0px 20px 0px #07ACE6;
-                }
+                @include pricing-element-container-1200(#07ACE6);
             }
         }
     }
@@ -149,93 +67,15 @@
         font-size: 2rem;
         .pricing-elements{
             .pricing-element-red-container{
-                .pricing-element{
-                    font-size: 2rem;
-                    width: 100%;
-                    .plan{
-                        font-size: 2rem;
-                    }
-                    .characteristics{
-                        width: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        .characteristics-pair{
-                            width: 100%;
-                            .pink-box{
-                                width: 1.5rem;
-                                height: 1.5rem;
-                            }
-
-                            .green-box{
-                                width: 1.5rem;
-                                height: 1.5rem;
-                            }
-                            p{
-                                font-size: 2rem;
-                            }
-                        }
-                    }
-                }
+                @include pricing-element-container-1980();
             }
 
             .pricing-element-blue-container{
-                .pricing-element{
-                    font-size: 2rem;
-                    width: 100%;
-                    .plan{
-                        font-size: 2rem;
-                    }
-                    .characteristics{
-                        width: 100%;
-                        .characteristics-pair{
-                            width: 100%;
-                            .pink-box{
-                                width: 1.5rem;
-                                height: 1.5rem;
-                                p{
-                                    font-size: 2rem;
-                                }
-                            }
-
-                            .green-box{
-                                width: 1.5rem;
-                                height: 1.5rem;
-                            }
-                            p{
-                                font-size: 2rem;
-                            }
-                        }
-                    }
-                }
+                @include pricing-element-container-1980();
             }
 
             .pricing-element-green-container{
-                .pricing-element{
-                    font-size: 2rem;
-                    width: 100%;
-                    .plan{
-                        font-size: 2rem;
-                    }
-                    .characteristics{
-                        width: 100%;
-                        .characteristics-pair{
-                            width: 100%;
-                            .pink-box{
-                                width: 1.5rem;
-                                height: 1.5rem;
-                            }
-
-                            .green-box{
-                                width: 1.5rem;
-                                height: 1.5rem;
-                            }
-                            p{
-                                font-size: 2rem;
-                            }
-                        }
-                    }
-                }
+                @include pricing-element-container-1980();
             }
         }
     }
