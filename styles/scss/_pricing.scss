@@ -1,3 +1,91 @@
+
+@mixin input($backgroundColor){
+    background: $backgroundColor;
+    color: white;
+    border-radius: 23px;
+    border: none;
+    width: 8rem;
+    height: 2.5rem;
+    position: relative;
+    text-align: center;
+}
+
+@mixin box($color){
+    width: 11px;
+    height: 11px;
+    border-radius: 2px;
+    border: 1px solid $color;
+    display: inline-block;
+}
+
+@mixin pricing-element($border, $color){
+    border: 2px solid $border;
+    border-radius: 18px;
+    padding: 2%;
+    font-size: 0.6rem;
+    width: 100%;
+    
+    .plan{
+        display: inline-block;
+        padding: 2%;
+        width: 45%;
+        margin: auto;
+        font-size: 1rem;
+
+        h3{
+           margin: 0;
+        }
+        
+        p{
+            color: $color;
+            font-size: 3rem;
+            margin: 0;
+            
+        }
+    }
+
+    .characteristics{
+        display: inline-block;
+        padding: 2%;
+        width: 45%;
+
+        .characteristics-pair{
+            text-align: start;
+
+            .green-box{
+                @include box(#55DFB4);
+                background-image: url('../../assets/Vector\ 3.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+
+            .pink-box{
+                @include box(#EB476E);
+                text-align: center;
+
+                p{
+                    color:#EB476E ;
+                    font-size: 11px;
+                    margin: 0;
+                }
+            }
+
+            p{
+                display: inline-block;
+            }
+        }
+    }
+}
+
+@mixin pricing-element-container($element-color,$input-color){
+    .pricing-element{
+        @include pricing-element($element-color,$element-color);
+    }
+    input[type="button"]{
+        @include input($input-color);
+    }
+}
 .pricing{
     padding: 5%;
 
@@ -5,121 +93,50 @@
         font-weight: normal;
     }
 
-    @mixin input($backgroundColor){
-        background: $backgroundColor;
-        color: white;
-        padding: 5%;
-        border-radius: 23px;
-        border: none;
-        width: 8rem;
-        height: 2.5rem;
-        position: relative;
-        top: -1.5rem;
-    }
-
-    @mixin box($color){
-        width: 11px;
-        height: 11px;
-        border-radius: 2px;
-        border: 1px solid $color;
-        display: inline-block;
-    }
-
-    @mixin pricing-element($border, $color){
-        border: 2px solid $border;
-        border-radius: 18px;
-        padding: 2%;
-        font-size: 0.6rem;
-
-        
-        .plan{
-            display: inline-block;
-            padding: 2%;
-            width: 45%;
-            margin: auto;
-            font-size: 1rem;
-
-            h3{
-               margin: 0;
-            }
-            
-            p{
-                color: $color;
-                font-size: 3rem;
-                margin: 0;
-                
-            }
-        }
-
-        .characteristics{
-            display: inline-block;
-            padding: 2%;
-            width: 45%;
-
-            .characteristics-pair{
-                text-align: start;
-
-                .green-box{
-                    @include box(#55DFB4);
-                    background-image: url('../../assets/Vector\ 3.png');
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: contain;
-                }
-
-                .pink-box{
-                    @include box(#EB476E);
-                    text-align: center;
-
-                    p{
-                        color:#EB476E ;
-                        font-size: 11px;
-                        margin: 0;
-                    }
-                }
-
-                p{
-                    display: inline-block;
-                }
-            }
-        }
-    }
-
-    @mixin pricing-element-container($element-color,$input-color){
-        .pricing-pink-element{
-            @include pricing-element($element-color,$element-color);
-        }
-        input[type="button"]{
-            @include input($input-color);
-        }
-    }
-
     .pricing-element-red-container{
         @include pricing-element-container(#FB3B64,#EB476E);
+        input[type="button"]{
+            top: -1.5rem;
+        }
     }
 
     .pricing-element-blue-container{
         @include pricing-element-container(#07ACE6,#07ACE6);
+        input[type="button"]{
+            position: relative;
+            bottom: -1.6rem;
+        }
     }
 
     .pricing-element-green-container{
+        margin-top: 15%;
         @include pricing-element-container(#55DFB4,#55DFB4);
         input[type="button"]{
-            bottom: 3rem;
+            bottom: -1.6rem;
         }
     }
 }
 
 @media screen and (min-width: 768px){
     .pricing{
-        padding: 5% 10%;
+        padding: 5% 20%;
         @mixin pricing-element($border, $color){
             .pricing-element-container{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
             }
+            .plan{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+            }
             .characteristics{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
                 .characteristics-pair{
                     p{
                         font-size: 1rem;
@@ -130,6 +147,206 @@
 
         .pricing-pink-element{
             @include pricing-element(#FB3B64,#FB3B64);
+            padding: 0;
         }
     }
 }
+
+@media screen and (min-width: 1200px){
+
+    .pricing{
+        padding: 5% 0;
+        width: 100%;
+        .pricing-elements{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            background: transparent;
+
+            .pricing-element-green-container{
+                margin-top: 0;
+                width: 25%;
+                @include pricing-element-container(#55DFB4,#55DFB4);
+                input[type="button"]{
+                    bottom: -1.6rem;
+                }
+
+                .pricing-element{
+                    font-size: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    transition: width 0.3s ease-in, height 0.3s ease-in;
+                    .characteristics-pair{
+                        width: 10rem;
+                    }
+                }
+
+                .pricing-element:hover{
+                    width: 105%;
+                    height: 105%;
+                    box-shadow: 0px 0px 20px 0px #55DFB4;
+                }
+            }
+
+            .pricing-element-red-container{
+                width: 25%;
+                height: 29rem;
+                @include pricing-element-container(#FB3B64,#EB476E);
+                input[type="button"]{
+                    top: -1.5rem;
+                }
+
+                .pricing-element{
+                    font-size: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    transition: width 0.3s ease-in, height 0.3s ease-in;
+                    .characteristics-pair{
+                        width: 10rem;
+                    }
+                }
+
+                .pricing-element:hover{
+                    width: 105%;
+                    height: 105%;
+                    box-shadow: 0px 0px 20px 0px #FB3B64;
+                }
+            }
+        
+            .pricing-element-blue-container{
+                width: 25%;
+                @include pricing-element-container(#07ACE6,#07ACE6);
+                input[type="button"]{
+                    position: relative;
+                    bottom: -1.6rem;
+                }
+
+                .pricing-element{
+                    font-size: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    transition: width 0.3s ease-in, height 0.3s ease-in;
+                    .characteristics-pair{
+                        width: 10rem;
+                    }
+                }
+
+                .pricing-element:hover{
+                    width: 105%;
+                    height: 105%;
+                    box-shadow: 0px 0px 20px 0px #07ACE6;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1980px){
+    .pricing{
+        font-size: 2rem;
+        .pricing-elements{
+            .pricing-element-red-container{
+                .pricing-element{
+                    font-size: 2rem;
+                    width: 100%;
+                    .plan{
+                        font-size: 2rem;
+                    }
+                    .characteristics{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        .characteristics-pair{
+                            width: 100%;
+                            .pink-box{
+                                width: 1.5rem;
+                                height: 1.5rem;
+                            }
+
+                            .green-box{
+                                width: 1.5rem;
+                                height: 1.5rem;
+                            }
+                            p{
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pricing-element-blue-container{
+                .pricing-element{
+                    font-size: 2rem;
+                    width: 100%;
+                    .plan{
+                        font-size: 2rem;
+                    }
+                    .characteristics{
+                        width: 100%;
+                        .characteristics-pair{
+                            width: 100%;
+                            .pink-box{
+                                width: 1.5rem;
+                                height: 1.5rem;
+                                p{
+                                    font-size: 2rem;
+                                }
+                            }
+
+                            .green-box{
+                                width: 1.5rem;
+                                height: 1.5rem;
+                            }
+                            p{
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pricing-element-green-container{
+                .pricing-element{
+                    font-size: 2rem;
+                    width: 100%;
+                    .plan{
+                        font-size: 2rem;
+                    }
+                    .characteristics{
+                        width: 100%;
+                        .characteristics-pair{
+                            width: 100%;
+                            .pink-box{
+                                width: 1.5rem;
+                                height: 1.5rem;
+                            }
+
+                            .green-box{
+                                width: 1.5rem;
+                                height: 1.5rem;
+                            }
+                            p{
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 

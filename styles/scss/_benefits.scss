@@ -95,17 +95,19 @@
                     top: 0rem;
                 }
             }
-            .benefits-element-iphone{
+        }
+
+        .benefits-element-iphone{
                 .blue-circle{
                     position: absolute;
-                    right: 8rem;
+                    right: 11rem;
                     background: #08A6E4;
                     width: 30%;
-                    height: 5rem;
+                    height: 8rem;
                     top: 0rem;
                 }
             }
-        }
+
         .benefits-element-trumpet{
             text-align: start;
             background: #55DFB4;
@@ -125,47 +127,88 @@
 @media  screen and (min-width: 1200px){
 
     .benefits {
-        padding: 5% 7%;
-        .benefits-element{
+        padding: 1% 15%;
 
-            padding: 4%;
+        .benefits-element{
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 5%;
+
+            .benefits-element-text-mac{
+                border-bottom: solid 4px #FB3B64;
+            }
 
             .circle-and-img-container{
-                margin-top: 3%;
+                margin-top: 1%;
+                height: 100%;
                 img{
                     margin-top: 1%;
+                    width: 100%;
                 }
     
                 .pink-circle{
-                    right: 18rem;
-                    width: 16%;
-                    height: 5rem;
+                    right: 0rem;
+                    width: 50%;
+                    height: 6rem;
                     top: 0rem;
+                    border-radius: 10%;
                 }
-    
+            }
+        }
+
+        .benefits-element-iphone{
+            display: flex;
+            align-items: center;
+            .benefits-element-text-iphone{
+                border-bottom: solid 4px #08A6E4;
+            }
+            .circle-and-img-container{
+                margin: 0;
+                height: 100%;
+                img{
+                    margin-top: 0;
+                    width: 100%;
+                }
                 .blue-circle{
-                    right: 20rem;
+                    left: 0rem;
                     background: #08A6E4;
-                    width: 20%;
-                    height: 7rem;
-                    top: 0rem;
+                    width: 90%;
+                    height: 11rem;
+                    bottom: 20rem;
                 }
             }
         }
-        .benefits-element-trumpet{
-            text-align: start;
-            background: #55DFB4;
-            border-radius: 1%;
-            height: 12rem;
-    
-            img{
-                width: 30%;
-                height: auto;
-                position: relative;
-                margin-left: 30%;
+           .bottom-benefits{
+                display: flex;
+                justify-content: space-between;
+                padding: 5% 2%;
+                .benefits-element-bottom{
+                    text-align: start;
+                    padding: 5%;
+                    width: 50%;
+                    height: 100%;
+                     p{
+                        border-bottom: solid 4px #55DFB4;
+                        padding-bottom: 3%;
+                     }
+                }
+                .benefits-element-trumpet{
+                    margin-top: 5%;
+                    text-align: start;
+                    background: #55DFB4;
+                    border-radius: 1%;
+                    width: 35%;
+                    height: 17.5rem;
+            
+                    img{
+                        width: 100%;
+                        height: auto;
+                        position: relative;
+                        bottom: 0;
+                    }
+                }
             }
         }
-    }
 } 
 
 @media  screen and (min-width: 1980px){

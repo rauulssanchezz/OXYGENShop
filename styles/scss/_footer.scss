@@ -32,3 +32,22 @@ footer{
         }
     }
 }
+
+@media screen and (min-width: 1980px) {
+    footer{
+        padding: 1%;
+        .text{
+            p{
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .footer-imgs{
+        text-align: end;
+        img{
+            width: 5%;
+            display: inline-block;
+            margin-right: 1rem;
+        }
+    }
+}

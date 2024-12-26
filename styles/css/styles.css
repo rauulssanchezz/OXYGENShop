@@ -77,7 +77,7 @@ header h1 {
 }
 .container .sell-more input {
   background-color: var(--primary-color);
-  padding: 8% 10%;
+  padding: 7% 0;
   border-radius: 100px;
   border: none;
   margin-top: 1rem;
@@ -105,20 +105,20 @@ header h1 {
   display: inline-block;
   width: 12%;
   position: absolute;
-  right: 8.5rem;
+  right: 9rem;
 }
 .container .most-popular .most-popular-element-container .most-popular-element .eye-img {
   display: inline-block;
   width: 15%;
   position: absolute;
-  right: 8.2rem;
+  right: 9.2rem;
   margin-top: 5%;
 }
 .container .most-popular .most-popular-element-container .most-popular-element .catalog-img {
   display: inline-block;
   width: 12%;
   position: absolute;
-  right: 8.5rem;
+  right: 9.5rem;
   margin-top: 2%;
 }
 .container .most-popular .most-popular-element-container .most-popular-element p {
@@ -253,8 +253,8 @@ header h1 {
     width: 30%;
   }
   .container .most-popular .most-popular-element-container .most-popular-element img {
-    width: 3%;
-    left: 33rem;
+    width: 4%;
+    left: 32rem;
   }
   .container .most-popular .most-popular-element-container .most-popular-element .eye-img {
     width: 5%;
@@ -403,12 +403,12 @@ header h1 {
     height: 6rem;
     top: 0rem;
   }
-  .benefits .benefits-element .benefits-element-iphone .blue-circle {
+  .benefits .benefits-element-iphone .blue-circle {
     position: absolute;
-    right: 8rem;
+    right: 11rem;
     background: #08A6E4;
     width: 30%;
-    height: 5rem;
+    height: 8rem;
     top: 0rem;
   }
   .benefits .benefits-element-trumpet {
@@ -426,41 +426,81 @@ header h1 {
 }
 @media screen and (min-width: 1200px) {
   .benefits {
-    padding: 5% 7%;
+    padding: 1% 15%;
   }
   .benefits .benefits-element {
-    padding: 4%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 5%;
+  }
+  .benefits .benefits-element .benefits-element-text-mac {
+    border-bottom: solid 4px #FB3B64;
   }
   .benefits .benefits-element .circle-and-img-container {
-    margin-top: 3%;
+    margin-top: 1%;
+    height: 100%;
   }
   .benefits .benefits-element .circle-and-img-container img {
     margin-top: 1%;
+    width: 100%;
   }
   .benefits .benefits-element .circle-and-img-container .pink-circle {
-    right: 18rem;
-    width: 16%;
-    height: 5rem;
+    right: 0rem;
+    width: 50%;
+    height: 6rem;
     top: 0rem;
+    border-radius: 10%;
   }
-  .benefits .benefits-element .circle-and-img-container .blue-circle {
-    right: 20rem;
+  .benefits .benefits-element-iphone {
+    display: flex;
+    align-items: center;
+  }
+  .benefits .benefits-element-iphone .benefits-element-text-iphone {
+    border-bottom: solid 4px #08A6E4;
+  }
+  .benefits .benefits-element-iphone .circle-and-img-container {
+    margin: 0;
+    height: 100%;
+  }
+  .benefits .benefits-element-iphone .circle-and-img-container img {
+    margin-top: 0;
+    width: 100%;
+  }
+  .benefits .benefits-element-iphone .circle-and-img-container .blue-circle {
+    left: 0rem;
     background: #08A6E4;
-    width: 20%;
-    height: 7rem;
-    top: 0rem;
+    width: 90%;
+    height: 11rem;
+    bottom: 20rem;
   }
-  .benefits .benefits-element-trumpet {
+  .benefits .bottom-benefits {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 2%;
+  }
+  .benefits .bottom-benefits .benefits-element-bottom {
+    text-align: start;
+    padding: 5%;
+    width: 50%;
+    height: 100%;
+  }
+  .benefits .bottom-benefits .benefits-element-bottom p {
+    border-bottom: solid 4px #55DFB4;
+    padding-bottom: 3%;
+  }
+  .benefits .bottom-benefits .benefits-element-trumpet {
+    margin-top: 5%;
     text-align: start;
     background: #55DFB4;
     border-radius: 1%;
-    height: 12rem;
+    width: 35%;
+    height: 17.5rem;
   }
-  .benefits .benefits-element-trumpet img {
-    width: 30%;
+  .benefits .bottom-benefits .benefits-element-trumpet img {
+    width: 100%;
     height: auto;
     position: relative;
-    margin-left: 30%;
+    bottom: 0;
   }
 }
 @media screen and (min-width: 1980px) {
@@ -547,36 +587,37 @@ header h1 {
 .pricing h2 {
   font-weight: normal;
 }
-.pricing .pricing-element-red-container .pricing-pink-element {
+.pricing .pricing-element-red-container .pricing-element {
   border: 2px solid #FB3B64;
   border-radius: 18px;
   padding: 2%;
   font-size: 0.6rem;
+  width: 100%;
 }
-.pricing .pricing-element-red-container .pricing-pink-element .plan {
+.pricing .pricing-element-red-container .pricing-element .plan {
   display: inline-block;
   padding: 2%;
   width: 45%;
   margin: auto;
   font-size: 1rem;
 }
-.pricing .pricing-element-red-container .pricing-pink-element .plan h3 {
+.pricing .pricing-element-red-container .pricing-element .plan h3 {
   margin: 0;
 }
-.pricing .pricing-element-red-container .pricing-pink-element .plan p {
+.pricing .pricing-element-red-container .pricing-element .plan p {
   color: #FB3B64;
   font-size: 3rem;
   margin: 0;
 }
-.pricing .pricing-element-red-container .pricing-pink-element .characteristics {
+.pricing .pricing-element-red-container .pricing-element .characteristics {
   display: inline-block;
   padding: 2%;
   width: 45%;
 }
-.pricing .pricing-element-red-container .pricing-pink-element .characteristics .characteristics-pair {
+.pricing .pricing-element-red-container .pricing-element .characteristics .characteristics-pair {
   text-align: start;
 }
-.pricing .pricing-element-red-container .pricing-pink-element .characteristics .characteristics-pair .green-box {
+.pricing .pricing-element-red-container .pricing-element .characteristics .characteristics-pair .green-box {
   width: 11px;
   height: 11px;
   border-radius: 2px;
@@ -587,7 +628,7 @@ header h1 {
   background-position: center;
   background-size: contain;
 }
-.pricing .pricing-element-red-container .pricing-pink-element .characteristics .characteristics-pair .pink-box {
+.pricing .pricing-element-red-container .pricing-element .characteristics .characteristics-pair .pink-box {
   width: 11px;
   height: 11px;
   border-radius: 2px;
@@ -595,55 +636,58 @@ header h1 {
   display: inline-block;
   text-align: center;
 }
-.pricing .pricing-element-red-container .pricing-pink-element .characteristics .characteristics-pair .pink-box p {
+.pricing .pricing-element-red-container .pricing-element .characteristics .characteristics-pair .pink-box p {
   color: #EB476E;
   font-size: 11px;
   margin: 0;
 }
-.pricing .pricing-element-red-container .pricing-pink-element .characteristics .characteristics-pair p {
+.pricing .pricing-element-red-container .pricing-element .characteristics .characteristics-pair p {
   display: inline-block;
 }
 .pricing .pricing-element-red-container input[type=button] {
   background: #EB476E;
   color: white;
-  padding: 5%;
   border-radius: 23px;
   border: none;
   width: 8rem;
   height: 2.5rem;
   position: relative;
+  text-align: center;
+}
+.pricing .pricing-element-red-container input[type=button] {
   top: -1.5rem;
 }
-.pricing .pricing-element-blue-container .pricing-pink-element {
+.pricing .pricing-element-blue-container .pricing-element {
   border: 2px solid #07ACE6;
   border-radius: 18px;
   padding: 2%;
   font-size: 0.6rem;
+  width: 100%;
 }
-.pricing .pricing-element-blue-container .pricing-pink-element .plan {
+.pricing .pricing-element-blue-container .pricing-element .plan {
   display: inline-block;
   padding: 2%;
   width: 45%;
   margin: auto;
   font-size: 1rem;
 }
-.pricing .pricing-element-blue-container .pricing-pink-element .plan h3 {
+.pricing .pricing-element-blue-container .pricing-element .plan h3 {
   margin: 0;
 }
-.pricing .pricing-element-blue-container .pricing-pink-element .plan p {
+.pricing .pricing-element-blue-container .pricing-element .plan p {
   color: #07ACE6;
   font-size: 3rem;
   margin: 0;
 }
-.pricing .pricing-element-blue-container .pricing-pink-element .characteristics {
+.pricing .pricing-element-blue-container .pricing-element .characteristics {
   display: inline-block;
   padding: 2%;
   width: 45%;
 }
-.pricing .pricing-element-blue-container .pricing-pink-element .characteristics .characteristics-pair {
+.pricing .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair {
   text-align: start;
 }
-.pricing .pricing-element-blue-container .pricing-pink-element .characteristics .characteristics-pair .green-box {
+.pricing .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair .green-box {
   width: 11px;
   height: 11px;
   border-radius: 2px;
@@ -654,7 +698,7 @@ header h1 {
   background-position: center;
   background-size: contain;
 }
-.pricing .pricing-element-blue-container .pricing-pink-element .characteristics .characteristics-pair .pink-box {
+.pricing .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair .pink-box {
   width: 11px;
   height: 11px;
   border-radius: 2px;
@@ -662,55 +706,62 @@ header h1 {
   display: inline-block;
   text-align: center;
 }
-.pricing .pricing-element-blue-container .pricing-pink-element .characteristics .characteristics-pair .pink-box p {
+.pricing .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair .pink-box p {
   color: #EB476E;
   font-size: 11px;
   margin: 0;
 }
-.pricing .pricing-element-blue-container .pricing-pink-element .characteristics .characteristics-pair p {
+.pricing .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair p {
   display: inline-block;
 }
 .pricing .pricing-element-blue-container input[type=button] {
   background: #07ACE6;
   color: white;
-  padding: 5%;
   border-radius: 23px;
   border: none;
   width: 8rem;
   height: 2.5rem;
   position: relative;
-  top: -1.5rem;
+  text-align: center;
 }
-.pricing .pricing-element-green-container .pricing-pink-element {
+.pricing .pricing-element-blue-container input[type=button] {
+  position: relative;
+  bottom: -1.6rem;
+}
+.pricing .pricing-element-green-container {
+  margin-top: 15%;
+}
+.pricing .pricing-element-green-container .pricing-element {
   border: 2px solid #55DFB4;
   border-radius: 18px;
   padding: 2%;
   font-size: 0.6rem;
+  width: 100%;
 }
-.pricing .pricing-element-green-container .pricing-pink-element .plan {
+.pricing .pricing-element-green-container .pricing-element .plan {
   display: inline-block;
   padding: 2%;
   width: 45%;
   margin: auto;
   font-size: 1rem;
 }
-.pricing .pricing-element-green-container .pricing-pink-element .plan h3 {
+.pricing .pricing-element-green-container .pricing-element .plan h3 {
   margin: 0;
 }
-.pricing .pricing-element-green-container .pricing-pink-element .plan p {
+.pricing .pricing-element-green-container .pricing-element .plan p {
   color: #55DFB4;
   font-size: 3rem;
   margin: 0;
 }
-.pricing .pricing-element-green-container .pricing-pink-element .characteristics {
+.pricing .pricing-element-green-container .pricing-element .characteristics {
   display: inline-block;
   padding: 2%;
   width: 45%;
 }
-.pricing .pricing-element-green-container .pricing-pink-element .characteristics .characteristics-pair {
+.pricing .pricing-element-green-container .pricing-element .characteristics .characteristics-pair {
   text-align: start;
 }
-.pricing .pricing-element-green-container .pricing-pink-element .characteristics .characteristics-pair .green-box {
+.pricing .pricing-element-green-container .pricing-element .characteristics .characteristics-pair .green-box {
   width: 11px;
   height: 11px;
   border-radius: 2px;
@@ -721,7 +772,7 @@ header h1 {
   background-position: center;
   background-size: contain;
 }
-.pricing .pricing-element-green-container .pricing-pink-element .characteristics .characteristics-pair .pink-box {
+.pricing .pricing-element-green-container .pricing-element .characteristics .characteristics-pair .pink-box {
   width: 11px;
   height: 11px;
   border-radius: 2px;
@@ -729,40 +780,426 @@ header h1 {
   display: inline-block;
   text-align: center;
 }
-.pricing .pricing-element-green-container .pricing-pink-element .characteristics .characteristics-pair .pink-box p {
+.pricing .pricing-element-green-container .pricing-element .characteristics .characteristics-pair .pink-box p {
   color: #EB476E;
   font-size: 11px;
   margin: 0;
 }
-.pricing .pricing-element-green-container .pricing-pink-element .characteristics .characteristics-pair p {
+.pricing .pricing-element-green-container .pricing-element .characteristics .characteristics-pair p {
   display: inline-block;
 }
 .pricing .pricing-element-green-container input[type=button] {
   background: #55DFB4;
   color: white;
-  padding: 5%;
   border-radius: 23px;
   border: none;
   width: 8rem;
   height: 2.5rem;
   position: relative;
-  top: -1.5rem;
+  text-align: center;
 }
 .pricing .pricing-element-green-container input[type=button] {
-  bottom: 3rem;
+  bottom: -1.6rem;
 }
 
 @media screen and (min-width: 768px) {
   .pricing {
-    padding: 5% 10%;
+    padding: 5% 20%;
+  }
+  .pricing .pricing-pink-element {
+    padding: 0;
   }
   .pricing .pricing-pink-element .pricing-element-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+  .pricing .pricing-pink-element .plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  .pricing .pricing-pink-element .characteristics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
   .pricing .pricing-pink-element .characteristics .characteristics-pair p {
     font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pricing {
+    padding: 5% 0;
+    width: 100%;
+  }
+  .pricing .pricing-elements {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background: transparent;
+  }
+  .pricing .pricing-elements .pricing-element-green-container {
+    margin-top: 0;
+    width: 25%;
+  }
+  .pricing .pricing-elements .pricing-element-green-container .pricing-element {
+    border: 2px solid #55DFB4;
+    border-radius: 18px;
+    padding: 2%;
+    font-size: 0.6rem;
+    width: 100%;
+  }
+  .pricing .pricing-elements .pricing-element-green-container .pricing-element .plan {
+    display: inline-block;
+    padding: 2%;
+    width: 45%;
+    margin: auto;
+    font-size: 1rem;
+  }
+  .pricing .pricing-elements .pricing-element-green-container .pricing-element .plan h3 {
+    margin: 0;
+  }
+  .pricing .pricing-elements .pricing-element-green-container .pricing-element .plan p {
+    color: #55DFB4;
+    font-size: 3rem;
+    margin: 0;
+  }
+  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics {
+    display: inline-block;
+    padding: 2%;
+    width: 45%;
+  }
+  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair {
+    text-align: start;
+  }
+  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair .green-box {
+    width: 11px;
+    height: 11px;
+    border-radius: 2px;
+    border: 1px solid #55DFB4;
+    display: inline-block;
+    background-image: url("../../assets/Vector 3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair .pink-box {
+    width: 11px;
+    height: 11px;
+    border-radius: 2px;
+    border: 1px solid #EB476E;
+    display: inline-block;
+    text-align: center;
+  }
+  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair .pink-box p {
+    color: #EB476E;
+    font-size: 11px;
+    margin: 0;
+  }
+  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair p {
+    display: inline-block;
+  }
+  .pricing .pricing-elements .pricing-element-green-container input[type=button] {
+    background: #55DFB4;
+    color: white;
+    border-radius: 23px;
+    border: none;
+    width: 8rem;
+    height: 2.5rem;
+    position: relative;
+    text-align: center;
+  }
+  .pricing .pricing-elements .pricing-element-green-container input[type=button] {
+    bottom: -1.6rem;
+  }
+  .pricing .pricing-elements .pricing-element-green-container .pricing-element {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: width 0.3s ease-in, height 0.3s ease-in;
+  }
+  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics-pair {
+    width: 10rem;
+  }
+  .pricing .pricing-elements .pricing-element-green-container .pricing-element:hover {
+    width: 105%;
+    height: 105%;
+    box-shadow: 0px 0px 20px 0px #55DFB4;
+  }
+  .pricing .pricing-elements .pricing-element-red-container {
+    width: 25%;
+    height: 29rem;
+  }
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element {
+    border: 2px solid #FB3B64;
+    border-radius: 18px;
+    padding: 2%;
+    font-size: 0.6rem;
+    width: 100%;
+  }
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element .plan {
+    display: inline-block;
+    padding: 2%;
+    width: 45%;
+    margin: auto;
+    font-size: 1rem;
+  }
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element .plan h3 {
+    margin: 0;
+  }
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element .plan p {
+    color: #FB3B64;
+    font-size: 3rem;
+    margin: 0;
+  }
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics {
+    display: inline-block;
+    padding: 2%;
+    width: 45%;
+  }
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair {
+    text-align: start;
+  }
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair .green-box {
+    width: 11px;
+    height: 11px;
+    border-radius: 2px;
+    border: 1px solid #55DFB4;
+    display: inline-block;
+    background-image: url("../../assets/Vector 3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair .pink-box {
+    width: 11px;
+    height: 11px;
+    border-radius: 2px;
+    border: 1px solid #EB476E;
+    display: inline-block;
+    text-align: center;
+  }
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair .pink-box p {
+    color: #EB476E;
+    font-size: 11px;
+    margin: 0;
+  }
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair p {
+    display: inline-block;
+  }
+  .pricing .pricing-elements .pricing-element-red-container input[type=button] {
+    background: #EB476E;
+    color: white;
+    border-radius: 23px;
+    border: none;
+    width: 8rem;
+    height: 2.5rem;
+    position: relative;
+    text-align: center;
+  }
+  .pricing .pricing-elements .pricing-element-red-container input[type=button] {
+    top: -1.5rem;
+  }
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: width 0.3s ease-in, height 0.3s ease-in;
+  }
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics-pair {
+    width: 10rem;
+  }
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element:hover {
+    width: 105%;
+    height: 105%;
+    box-shadow: 0px 0px 20px 0px #FB3B64;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container {
+    width: 25%;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container .pricing-element {
+    border: 2px solid #07ACE6;
+    border-radius: 18px;
+    padding: 2%;
+    font-size: 0.6rem;
+    width: 100%;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .plan {
+    display: inline-block;
+    padding: 2%;
+    width: 45%;
+    margin: auto;
+    font-size: 1rem;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .plan h3 {
+    margin: 0;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .plan p {
+    color: #07ACE6;
+    font-size: 3rem;
+    margin: 0;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics {
+    display: inline-block;
+    padding: 2%;
+    width: 45%;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair {
+    text-align: start;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair .green-box {
+    width: 11px;
+    height: 11px;
+    border-radius: 2px;
+    border: 1px solid #55DFB4;
+    display: inline-block;
+    background-image: url("../../assets/Vector 3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair .pink-box {
+    width: 11px;
+    height: 11px;
+    border-radius: 2px;
+    border: 1px solid #EB476E;
+    display: inline-block;
+    text-align: center;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair .pink-box p {
+    color: #EB476E;
+    font-size: 11px;
+    margin: 0;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair p {
+    display: inline-block;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container input[type=button] {
+    background: #07ACE6;
+    color: white;
+    border-radius: 23px;
+    border: none;
+    width: 8rem;
+    height: 2.5rem;
+    position: relative;
+    text-align: center;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container input[type=button] {
+    position: relative;
+    bottom: -1.6rem;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container .pricing-element {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: width 0.3s ease-in, height 0.3s ease-in;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics-pair {
+    width: 10rem;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container .pricing-element:hover {
+    width: 105%;
+    height: 105%;
+    box-shadow: 0px 0px 20px 0px #07ACE6;
+  }
+}
+@media screen and (min-width: 1980px) {
+  .pricing {
+    font-size: 2rem;
+  }
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element .plan {
+    font-size: 2rem;
+  }
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair {
+    width: 100%;
+  }
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair .pink-box {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair .green-box {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair p {
+    font-size: 2rem;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container .pricing-element {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .plan {
+    font-size: 2rem;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics {
+    width: 100%;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair {
+    width: 100%;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair .pink-box {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair .pink-box p {
+    font-size: 2rem;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair .green-box {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair p {
+    font-size: 2rem;
+  }
+  .pricing .pricing-elements .pricing-element-green-container .pricing-element {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .pricing .pricing-elements .pricing-element-green-container .pricing-element .plan {
+    font-size: 2rem;
+  }
+  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics {
+    width: 100%;
+  }
+  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair {
+    width: 100%;
+  }
+  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair .pink-box {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair .green-box {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair p {
+    font-size: 2rem;
   }
 }
 .any-questions {
@@ -786,14 +1223,14 @@ header h1 {
 }
 .any-questions input[type=button] {
   background: #08A6E4;
-  width: 70%;
-  padding: 7%;
+  width: 60%;
+  padding: 6% 0;
   border: none;
   color: white;
   border-radius: 35px;
   box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
   margin-top: 3rem;
-  margin-left: 4rem;
+  margin-left: 6rem;
 }
 .any-questions input[type=checkbox] {
   margin-top: 5rem;
@@ -825,6 +1262,64 @@ header h1 {
   margin-top: 2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .any-questions input[type=button] {
+    width: 30%;
+    padding: 3%;
+    margin-left: 20rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .any-questions {
+    padding: 5% 15%;
+  }
+  .any-questions h2 {
+    font-size: 2rem;
+  }
+  .any-questions .any-questions-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .any-questions .any-questions-container div {
+    width: 45%;
+  }
+  .any-questions .any-questions-container div .contact-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .any-questions .any-questions-container div .contact-info .img-and-text {
+    display: flex;
+  }
+  .any-questions .any-questions-container div .contact-info .img-and-text img {
+    width: 20%;
+  }
+  .any-questions .any-questions-container div .contact-info .img-and-text p {
+    width: 80%;
+    margin: 0;
+  }
+  .any-questions input[type=button] {
+    margin-left: 30rem;
+  }
+}
+@media screen and (min-width: 1980px) {
+  .any-questions {
+    font-size: 1.5rem;
+  }
+  .any-questions .any-questions-container .form form label {
+    font-size: 1.5rem;
+  }
+  .any-questions .any-questions-container .form label {
+    font-size: 1.5rem;
+  }
+  .any-questions input[type=button] {
+    font-size: 1.5rem;
+    width: 30%;
+    padding: 2% 0;
+    border-radius: 10rem;
+    margin-left: 75rem;
+  }
+}
 footer {
   position: relative;
   bottom: 0;
@@ -857,6 +1352,22 @@ footer .footer-imgs img {
   margin-right: 1rem;
 }
 
+@media screen and (min-width: 1980px) {
+  footer {
+    padding: 1%;
+  }
+  footer .text p {
+    font-size: 1.5rem;
+  }
+  .footer-imgs {
+    text-align: end;
+  }
+  .footer-imgs img {
+    width: 5%;
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}
 :root {
   --primary-color: #08A6E4;
 }

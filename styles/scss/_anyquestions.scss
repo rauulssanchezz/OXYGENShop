@@ -22,18 +22,17 @@
 
     input[type="button"]{
         background: #08A6E4;
-        width: 70%;
-        padding: 7%;
+        width: 60%;
+        padding: 6% 0;
         border: none;
         color: white;
         border-radius: 35px;
         box-shadow: 5px 10px 14px 0px #07ACE64A;
         margin-top: 3rem;
-        margin-left: 4rem;
+        margin-left: 6rem;
     }
     input[type="checkbox"]{
         margin-top: 5rem;
-
     }
 
     label{
@@ -62,6 +61,78 @@
                 position: static;
                 margin-top: 2rem;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .any-questions{
+        input[type="button"]{
+            width: 30%;
+            padding: 3%;
+            margin-left: 20rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .any-questions{
+        padding: 5% 15%;
+        h2{
+            font-size: 2rem;
+        }
+        .any-questions-container{
+            display: flex;
+            justify-content: space-between;
+
+            div{
+                width: 45%;
+
+                .contact-info{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    .img-and-text{
+                        display: flex;
+                        img{
+                            width: 20%;
+                        }
+                        p{
+                            width: 80%;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+        input[type="button"]{
+            margin-left: 30rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1980px) {
+    .any-questions{
+        font-size: 1.5rem;
+        .any-questions-container{
+            .form{
+                form{
+                    label{
+                        font-size: 1.5rem;
+                    }
+                }
+            
+                label{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        input[type="button"]{
+            font-size: 1.5rem;
+            width: 30%;
+            padding: 2% 0;
+            border-radius: 10rem;
+            margin-left: 75rem;
         }
     }
 }

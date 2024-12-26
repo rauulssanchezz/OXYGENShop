@@ -5,7 +5,7 @@
         padding: 0 10%;
         input{
             background-color: var(--primary-color) ;
-            padding:  8% 10%;
+            padding:  7% 0;
             border-radius: 100px;
             border: none;
             margin-top: 1rem;
@@ -45,14 +45,14 @@
                     display: inline-block;
                     width: 12%;
                     position: absolute;
-                    right: 8.5rem;
+                    right: 9rem;
                 }
 
                 .eye-img{
                     display: inline-block;
                     width: 15%;
                     position: absolute;
-                    right: 8.2rem;
+                    right: 9.2rem;
                     margin-top: 5%;
                 }
 
@@ -60,7 +60,7 @@
                     display: inline-block;
                     width: 12%;
                     position: absolute;
-                    right: 8.5rem;
+                    right: 9.5rem;
                     margin-top: 2%;
                 }
 
@@ -215,8 +215,8 @@
                 .most-popular-element{
                     width: 30%;
                     img{
-                        width: 3%;
-                        left: 33rem;
+                        width: 4%;
+                        left: 32rem;
                     }
     
                     .eye-img{
