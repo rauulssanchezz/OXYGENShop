@@ -98,6 +98,9 @@ header h1 {
 .container .most-popular h2 {
   font-weight: normal;
 }
+.container .most-popular .most-popular-element-container {
+  margin-top: 5%;
+}
 .container .most-popular .most-popular-element-container .most-popular-element {
   text-align: center;
 }
@@ -238,7 +241,7 @@ header h1 {
 }
 @media (min-width: 1980px) {
   .container {
-    margin-top: 10%;
+    margin-top: 5%;
   }
   .container .sell-more input {
     padding: 2% 2%;
@@ -1344,6 +1347,7 @@ header h1 {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 2.5rem;
   }
   .any-questions .any-questions-container div .contact-info .img-and-text {
     display: flex;
@@ -1372,6 +1376,9 @@ header h1 {
   .any-questions input[type=checkbox] {
     transform: scale(3);
     margin: 5rem 1% 1% 0;
+  }
+  .any-questions .any-questions-container div .contact-info {
+    margin-top: 5rem;
   }
   .any-questions .any-questions-container .form form label {
     font-size: 2rem;

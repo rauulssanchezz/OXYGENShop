@@ -92,6 +92,7 @@
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
+                    margin-top: 2.5rem;
                     .img-and-text{
                         display: flex;
                         img{
@@ -128,6 +129,13 @@
         }
 
         .any-questions-container{
+
+            div{
+                .contact-info{
+                    margin-top: 5rem;
+                }
+            }
+
             .form{
                 form{
                     label{
