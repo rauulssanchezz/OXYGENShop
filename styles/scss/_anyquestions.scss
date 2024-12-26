@@ -122,6 +122,11 @@
             font-size: 4rem;
         }
 
+        input[type="checkbox"]{
+            transform: scale(3);
+            margin: 5rem 1% 1% 0;
+        }
+
         .any-questions-container{
             .form{
                 form{
