@@ -210,15 +210,15 @@
                     }
     
                     .pink-circle{
-                        @include circle(#FB3B64);
+                        @include circle-1980(#FB3B64);
                     }
     
                     .blue-circle{
-                        @include circle(#08A6E4);
+                        @include circle-1980(#08A6E4);
                     }
     
                     .green-circle{
-                        @include circle(#55DFB4);
+                        @include circle-1980(#55DFB4);
                     }
                 }
             }
