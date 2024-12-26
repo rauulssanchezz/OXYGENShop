@@ -1,29 +1,8 @@
+@use 'mixins' as *;
+
 .benefits {
     background: #F7F7F7;
     padding: 10% 7%;
-
-    @mixin benefit-element(){
-        padding: 7%;
-        text-align: start;
-        margin-top: 5%;
-        background: #FFFFFF;
-        border-radius: 1%;
-
-        .circle-and-img-container{
-            width: 100%;
-            position: relative;
-            text-align: center;
-            margin-top: 5%;
-            height: 30%;
-
-            img{
-                position: relative;
-                display: inline-block;
-                z-index: 10;
-                margin-top: 5%;
-            }
-        }
-    }
 
     .benefits-element{
         @include benefit-element();

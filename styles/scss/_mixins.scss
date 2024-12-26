@@ -1,0 +1,169 @@
+
+//why uss
+@mixin circle($color){
+    display: inline-block;
+    background: $color;
+    width: 20%;
+    height: 4rem;
+    border-radius: 100%;
+}
+@mixin circle-768($color){
+    display: inline-block;
+    background: $color;
+    width: 18%;
+    height: 6rem;
+    border-radius: 100%;
+}
+@mixin circle-1200($color){
+    display: inline-block;
+    background: $color;
+    width: 35%;
+    height: 5.5rem;
+    border-radius: 100%;
+}
+@mixin circle($color){
+    display: inline-block;
+    background: $color;
+    width: 20%;
+    height: 8rem;
+    border-radius: 100%;
+}
+
+
+//pricing
+@mixin input($backgroundColor){
+    background: $backgroundColor;
+    color: white;
+    border-radius: 23px;
+    border: none;
+    width: 8rem;
+    height: 2.5rem;
+    position: relative;
+    text-align: center;
+}
+
+@mixin box($color){
+    width: 11px;
+    height: 11px;
+    border-radius: 2px;
+    border: 1px solid $color;
+    display: inline-block;
+}
+
+@mixin pricing-element($border, $color){
+    border: 2px solid $border;
+    border-radius: 18px;
+    padding: 2%;
+    font-size: 0.6rem;
+    width: 100%;
+    
+    .plan{
+        display: inline-block;
+        padding: 2%;
+        width: 45%;
+        margin: auto;
+        font-size: 1rem;
+
+        h3{
+           margin: 0;
+        }
+        
+        p{
+            color: $color;
+            font-size: 3rem;
+            margin: 0;
+            
+        }
+    }
+
+    .characteristics{
+        display: inline-block;
+        padding: 2%;
+        width: 45%;
+
+        .characteristics-pair{
+            text-align: start;
+
+            .green-box{
+                @include box(#55DFB4);
+                background-image: url('../../assets/Vector\ 3.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+
+            .pink-box{
+                @include box(#EB476E);
+                text-align: center;
+
+                p{
+                    color:#EB476E ;
+                    font-size: 11px;
+                    margin: 0;
+                }
+            }
+
+            p{
+                display: inline-block;
+            }
+        }
+    }
+}
+
+@mixin pricing-element-container($element-color,$input-color){
+    .pricing-element{
+        @include pricing-element($element-color,$element-color);
+    }
+    input[type="button"]{
+        @include input($input-color);
+    }
+}
+
+@mixin pricing-element-768($border, $color){
+    .pricing-element-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .plan{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    .characteristics{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        .characteristics-pair{
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+//benefits
+@mixin benefit-element(){
+    padding: 7%;
+    text-align: start;
+    margin-top: 5%;
+    background: #FFFFFF;
+    border-radius: 1%;
+
+    .circle-and-img-container{
+        width: 100%;
+        position: relative;
+        text-align: center;
+        margin-top: 5%;
+        height: 30%;
+
+        img{
+            position: relative;
+            display: inline-block;
+            z-index: 10;
+            margin-top: 5%;
+        }
+    }
+}

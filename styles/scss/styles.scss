@@ -4,6 +4,7 @@
 @use 'pricing';
 @use 'anyquestions';
 @use 'footer';
+@use 'mixins';
 
 :root{
     --primary-color: #08A6E4;
