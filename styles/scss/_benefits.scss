@@ -127,6 +127,7 @@
     
                 .pink-circle{
                     right: 0rem;
+                    bottom: 4rem;
                     width: 50%;
                     height: 6rem;
                     border-radius: 1.5rem;
@@ -137,21 +138,24 @@
         .benefits-element-iphone{
             display: flex;
             align-items: center;
+            justify-content: space-around;
             .benefits-element-text-iphone{
+                width: 40%;
                 border-bottom: solid 4px #08A6E4;
             }
             .circle-and-img-container{
                 margin: 0;
                 height: 100%;
+                width: 40%;
                 img{
-                    margin-top: 0;
-                    width: 100%;
+                    margin-top: 0rem;
+                    width: 120%;
                 }
                 .blue-circle{
                     left: 0rem;
                     background: #08A6E4;
                     width: 90%;
-                    height: 11rem;
+                    height: 13rem;
                     bottom: 20rem;
                 }
             }
@@ -189,7 +193,7 @@
         }
 } 
 
-@media  screen and (min-width: 1980px){
+@media  screen and (min-width: 1920px){
 
     .benefits {
         padding: 1% 15%;
@@ -201,19 +205,23 @@
 
             .benefits-element-text-mac{
                 border-bottom: solid 4px #FB3B64;
+                font-size: 1.5rem;
             }
 
             .circle-and-img-container{
                 margin-top: 1%;
                 height: 100%;
                 img{
-                    margin-top: 1%;
-                    width: 60%;
+                    margin-top: 15%;
+                    margin-left: 5%;
+                    width: 100%;
                 }
     
                 .pink-circle{
-                    right: 8rem;
-                    width: 30%;
+                    right: 0rem;
+                    left: 12rem;
+                    bottom: 0rem;
+                    width: 50%;
                     height: 10rem;
                     border-radius: 2rem;
                 }
@@ -223,24 +231,28 @@
         .benefits-element-iphone{
             display: flex;
             align-items: center;
+            justify-content: space-around;
             .benefits-element-text-iphone{
                 border-bottom: solid 4px #08A6E4;
+                font-size: 1.5rem;
+                width: 40%;
             }
             .circle-and-img-container{
+                width: 40%;
                 margin: 0;
                 height: 100%;
                 img{
                     position: absolute;
-                    top: 2rem;
+                    top: 4rem;
                     left: 2rem;
-                    width: 100%;
+                    width: 120%;
                 }
                 .blue-circle{
                     position: relative;
                     right: 8rem;
                     background: #08A6E4;
-                    width: 80%;
-                    height: 30rem;
+                    width: 100%;
+                    height: 25rem;
                     bottom: 20rem;
                 }
             }
@@ -254,6 +266,7 @@
                     padding: 5%;
                     width: 50%;
                     height: 100%;
+                    font-size: 1.5rem;
                      p{
                         border-bottom: solid 4px #55DFB4;
                         padding-bottom: 3%;
@@ -265,10 +278,10 @@
                     background: #55DFB4;
                     border-radius: 1%;
                     width: 35%;
-                    height: 29.3rem;
+                    height: 24rem;
             
                     img{
-                        width: 60%;
+                        width: 100%;
                         height: auto;
                         position: relative;
                     }

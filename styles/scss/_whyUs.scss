@@ -135,9 +135,9 @@
     .container{
         .sell-more{
             input{
-                padding:  3% 2%;
-                width: 35%;
-                font-size: 1.2rem;
+                padding:  1.5% 2%;
+                width: 30%;
+                font-size: 1rem;
             }
         }
 
@@ -183,14 +183,14 @@
     }
 } 
 
-@media  (min-width:1980px) {
+@media  (min-width:1920px) {
     .container{
         margin-top: 5%;
         .sell-more{
             input{
                 padding:2%;
-                width: 25%;
-                font-size: 2rem;
+                width: 30%;
+                font-size: 1.5rem;
             }
 
             h2{
@@ -204,35 +204,37 @@
                 justify-content: space-around;
                 .most-popular-element{
                     width: 30%;
-                    img{
-                        width: 4%;
-                        left: 32rem;
-                    }
-    
-                    .eye-img{
-                        width: 5%;
-                        right: 73rem;
-                        left: auto;
-                        margin-top: 1%;
-                    }
-    
-                    .catalog-img{
-                        width: 3%;
-                        right: 26rem;
-                        left: auto;
-                        margin-top: 1%;
-                    }
-    
-                    .pink-circle{
-                        @include circle-1980(#FB3B64);
-                    }
-    
-                    .blue-circle{
-                        @include circle-1980(#08A6E4);
-                    }
-    
-                    .green-circle{
-                        @include circle-1980(#55DFB4);
+                    div{
+                        img{
+                            width: 4%;
+                            left: 21rem;
+                            margin-top: 1%;
+                        }
+        
+                        .eye-img{
+                            width: 5%;
+                            right: 45rem;
+                            left: auto;
+                            margin-top: 2%;
+                        }
+        
+                        .catalog-img{
+                            width: 3%;
+                            right: 16rem;
+                            left: auto;
+                            margin-top: 2%;
+                        }
+                        .pink-circle{
+                            @include circle-1920(#FB3B64);
+                        }
+        
+                        .blue-circle{
+                            @include circle-1920(#08A6E4);
+                        }
+        
+                        .green-circle{
+                            @include circle-1920(#55DFB4);
+                        }
                     }
                 }
             }

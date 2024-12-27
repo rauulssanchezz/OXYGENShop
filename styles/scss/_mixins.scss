@@ -21,11 +21,11 @@
     height: 5.5rem;
     border-radius: 100%;
 }
-@mixin circle-1980($color){
+@mixin circle-1920($color){
     display: inline-block;
     background: $color;
-    width: 20%;
-    height: 8rem;
+    width: 25%;
+    height: 7rem;
     border-radius: 100%;
 }
 
@@ -170,16 +170,16 @@
     }
 }
 
-@mixin pricing-element-container-1980(){
+@mixin pricing-element-container-1920(){
     width: 20%;
     margin-top: 5%;
     input[type="button"]{
         width: 50%;
-        height: 5rem;
+        height: 3rem;
         border-radius: 100rem;
         padding: 0;
-        font-size: 2rem;
-        bottom: -3rem;
+        font-size: 1.5rem;
+        bottom: -1.2rem;
     }
     .pricing-element{
         font-size: 2rem;
@@ -190,7 +190,7 @@
         justify-content: center;
         align-items: center;
         .plan{
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
         .characteristics{
             width: 100%;
@@ -199,13 +199,13 @@
             justify-content: center;
             align-items: center;
             .characteristics-pair{
-                width: 60%;
+                width: 50%;
                 img{
-                    width: 1.5rem;
-                    height: 1.5rem;
+                    width: 1rem;
+                    height: 1rem;
                 }
                 p{
-                    font-size: 2rem;
+                    font-size: 1rem;
                 }
             }
         }

@@ -60,20 +60,20 @@
     }
 }
 
-@media screen and (min-width:1980px){
+@media screen and (min-width:1920px){
     .pricing{
         font-size: 2rem;
         .pricing-elements{
             .pricing-element-red-container{
-                @include pricing-element-container-1980();
+                @include pricing-element-container-1920();
             }
 
             .pricing-element-blue-container{
-                @include pricing-element-container-1980();
+                @include pricing-element-container-1920();
             }
 
             .pricing-element-green-container{
-                @include pricing-element-container-1980();
+                @include pricing-element-container-1920();
             }
         }
     }
