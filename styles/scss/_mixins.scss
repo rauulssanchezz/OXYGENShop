@@ -6,6 +6,7 @@
     width: 20%;
     height: 4rem;
     border-radius: 100%;
+    position: relative;
 }
 @mixin circle-768($color){
     display: inline-block;
@@ -13,6 +14,7 @@
     width: 18%;
     height: 6rem;
     border-radius: 100%;
+    position: relative;
 }
 @mixin circle-1200($color){
     display: inline-block;
@@ -20,13 +22,15 @@
     width: 35%;
     height: 5.5rem;
     border-radius: 100%;
+    position: relative;
 }
 @mixin circle-1920($color){
     display: inline-block;
     background: $color;
     width: 25%;
-    height: 7rem;
+    height: 6rem;
     border-radius: 100%;
+    position: relative;
 }
 
 

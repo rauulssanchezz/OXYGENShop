@@ -38,43 +38,48 @@
             .most-popular-element{
                 text-align: center;
 
-                img{
-                    display: inline-block;
-                    width: 12%;
-                    position: absolute;
-                    right: 9.5rem;
-                }
-
-                .eye-img{
-                    display: inline-block;
-                    width: 15%;
-                    position: absolute;
-                    right: 9.2rem;
-                    margin-top: 5%;
-                }
-
-                .catalog-img{
-                    display: inline-block;
-                    width: 12%;
-                    position: absolute;
-                    right: 9.5rem;
-                    margin-top: 2%;
-                }
-
-                p{
-                    opacity: 0.5;
-                }
-
-                .pink-circle{
-                    @include circle(#FB3B64);
-                }
-
-                .blue-circle{
-                    @include circle(#08A6E4);
-                }
-
-                .green-circle{
-                    @include circle(#55DFB4);
+                div{
+                    img{
+                        display: inline-block;
+                        width: 12%;
+                        position: absolute;
+                        right: 38%;
+                        z-index: 200;
+                    }
+    
+                    .eye-img{
+                        display: inline-block;
+                        width: 15%;
+                        position: absolute;
+                        right: 38%;
+                        z-index: 200;
+                        margin-top: 5%;
+                    }
+    
+                    .catalog-img{
+                        display: inline-block;
+                        width: 12%;
+                        position: absolute;
+                        right: 38%;
+                        z-index: 200;
+                        margin-top: 2%;
+                    }
+    
+                    p{
+                        opacity: 0.5;
+                    }
+    
+                    .pink-circle{
+                        @include circle(#FB3B64);
+                    }
+    
+                    .blue-circle{
+                        @include circle(#08A6E4);
+                    }
+    
+                    .green-circle{
+                        @include circle(#55DFB4);
+                    }
                 }
             }
         }
@@ -99,31 +104,33 @@
         .most-popular{
             .most-popular-element-container{
                 .most-popular-element{
-                    img{
-                        width: 10%;
-                        right: 16rem;
-                    }
-    
-                    .eye-img{
-                        width: 12%;
-                        right: 15.5rem;
-                    }
-    
-                    .catalog-img{
-                        width: 10%;
-                        right: 16rem;
-                    }
-    
-                    .pink-circle{
-                        @include circle-768(#FB3B64);
-                    }
-    
-                    .blue-circle{
-                        @include circle-768(#08A6E4);
-                    }
-    
-                    .green-circle{
-                        @include circle-768(#55DFB4);
+                    div{
+                        img{
+                            width: 10%;
+                            right: 16rem;
+                        }
+        
+                        .eye-img{
+                            width: 12%;
+                            right: 15.5rem;
+                        }
+        
+                        .catalog-img{
+                            width: 10%;
+                            right: 16rem;
+                        }
+        
+                        .pink-circle{
+                            @include circle-768(#FB3B64);
+                        }
+        
+                        .blue-circle{
+                            @include circle-768(#08A6E4);
+                        }
+        
+                        .green-circle{
+                            @include circle-768(#55DFB4);
+                        }
                     }
                 }
             }
@@ -147,35 +154,37 @@
                 justify-content: space-around;
                 .most-popular-element{
                     width: 30%;
-                    img{
-                        width: 6%;
-                        left: 12.5rem;
-                    }
-    
-                    .eye-img{
-                        width: 8%;
-                        right: 27rem;
-                        left: auto;
-                        margin-top: 2%;
-                    }
-    
-                    .catalog-img{
-                        width: 6%;
-                        right: 9rem;
-                        left: auto;
-                        margin-top: 1%;
-                    }
-    
-                    .pink-circle{
-                        @include circle-1200(#FB3B64);
-                    }
-    
-                    .blue-circle{
-                        @include circle-1200(#08A6E4);
-                    }
-    
-                    .green-circle{
-                        @include circle-1200(#55DFB4);
+                    div{
+                        img{
+                            width: 6%;
+                            left: 12.5rem;
+                        }
+        
+                        .eye-img{
+                            width: 8%;
+                            right: 27rem;
+                            left: auto;
+                            margin-top: 2%;
+                        }
+        
+                        .catalog-img{
+                            width: 6%;
+                            right: 9rem;
+                            left: auto;
+                            margin-top: 1%;
+                        }
+        
+                        .pink-circle{
+                            @include circle-1200(#FB3B64);
+                        }
+        
+                        .blue-circle{
+                            @include circle-1200(#08A6E4);
+                        }
+        
+                        .green-circle{
+                            @include circle-1200(#55DFB4);
+                        }
                     }
                 }
             }
