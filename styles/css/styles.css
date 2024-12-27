@@ -777,11 +777,6 @@ header h1 {
   bottom: -1.6rem;
 }
 
-@media screen and (min-width: 768px) {
-  .pricing {
-    padding: 5% 20%;
-  }
-}
 @media screen and (min-width: 1200px) {
   .pricing {
     padding: 5% 0;

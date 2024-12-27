@@ -102,31 +102,6 @@
     }
 }
 
-@mixin pricing-element-768($border, $color){
-    .pricing-element-container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .plan{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-    }
-    .characteristics{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-        .characteristics-pair{
-            p{
-                font-size: 1rem;
-            }
-        }
-    }
-}
-
 @mixin pricing-element-container-1200($color){
     @include pricing-element-container($color);
     margin-top: 5%;
