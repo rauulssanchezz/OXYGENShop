@@ -22,14 +22,15 @@
 
     input[type="button"]{
         background: #08A6E4;
-        width: 60%;
-        padding: 6% 0;
+        width: 40%;
+        padding: 4% 0;
         border: none;
         color: white;
         border-radius: 35px;
         box-shadow: 5px 10px 14px 0px #07ACE64A;
+        font-size: 1rem;
         margin-top: 3rem;
-        margin-left: 6rem;
+        margin-left: 14rem;
     }
     input[type="checkbox"]{
         margin-top: 5rem;
@@ -68,9 +69,24 @@
 @media screen and (min-width: 768px){
     .any-questions{
         input[type="button"]{
-            width: 30%;
+            width: 20%;
             padding: 3%;
-            margin-left: 20rem;
+            margin-left: 30rem;
+        }
+
+        .img-and-text{
+            width: 25%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            img{
+                display: block;
+            }
+
+            p{
+                margin-left: 1rem;
+                display: block;
+            }
         }
     }
 }
@@ -81,6 +97,7 @@
         h2{
             font-size: 2rem;
         }
+
         .any-questions-container{
             display: flex;
             justify-content: space-between;
@@ -107,7 +124,9 @@
             }
         }
         input[type="button"]{
-            margin-left: 30rem;
+            width: 20%;
+            margin-left: 35rem;
+            font-size: 1rem;
         }
     }
 }
@@ -150,8 +169,8 @@
         }
         input[type="button"]{
             font-size: 2rem;
-            width: 20%;
-            padding: 2% 0;
+            width: 15%;
+            padding: 1.5% 0;
             border-radius: 10rem;
         }
     }

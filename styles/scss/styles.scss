@@ -31,6 +31,15 @@ body{
     }
 }
 
+input{
+    transition: transform 0.3s ease-in;
+}
+
+input:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
 main{
     text-align: center;
     position:relative;

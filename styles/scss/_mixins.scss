@@ -164,8 +164,31 @@
         width: 100%;
         height: 100%;
         transition: transform 0.3s ease-in;
-        .characteristics-pair{
-            width: 10rem;
+
+        .characteristics{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .characteristics-pair{
+                width: 60%;
+                .pink-box{
+                    width: 0.7rem;
+                    height: 0.7rem;
+                    p{
+                        font-size: 0.7rem;
+                    }
+                }
+
+                .green-box{
+                    width: 0.7rem;
+                    height: 0.7rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+            }
         }
     }
 

@@ -4,7 +4,7 @@ footer{
     top: 10rem;
     background:#F7F7F7;
     box-shadow: 0px -5px 40px 0px #00000033;
-    padding: 4%;
+    padding: 2% 4%;
 
     .text{
         display: inline-block;
@@ -26,9 +26,26 @@ footer{
         width: 30%;
         text-align: center;
         display: inline-block;
+        margin-left: 2rem;
         img{
             display: inline-block;
-            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width:768px){
+    footer{
+        display: flex;
+        justify-content: space-between;
+        .footer-imgs{
+            width: 10%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            img{
+                height: 60%;
+            }
         }
     }
 }
@@ -43,11 +60,9 @@ footer{
         }
     }
     .footer-imgs{
-        text-align: end;
-        img{
-            width: 5%;
-            display: inline-block;
-            margin-right: 1rem;
-        }
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 5%;
     }
 }

@@ -9,6 +9,13 @@
 
     .pricing-element-red-container{
         @include pricing-element-container(#FB3B64);
+        .pricing-element{
+            .plan{
+                h4{
+                    visibility: hidden;
+                }
+            }
+        }
     }
 
     .pricing-element-blue-container{
@@ -38,21 +45,12 @@
             width: 100%;
             background: transparent;
 
-            
-
             .pricing-element-green-container{
                 @include pricing-element-container-1200(#55DFB4);
             }
 
             .pricing-element-red-container{
                 @include pricing-element-container-1200(#FB3B64);
-                .pricing-element{
-                    .plan{
-                        h4{
-                            visibility: hidden;
-                        }
-                    }
-                }
             }
         
             .pricing-element-blue-container{
