@@ -120,17 +120,7 @@
                             right: 16rem;
                         }
         
-                        .pink-circle{
-                            @include circle-768(#FB3B64);
-                        }
-        
-                        .blue-circle{
-                            @include circle-768(#08A6E4);
-                        }
-        
-                        .green-circle{
-                            @include circle-768(#55DFB4);
-                        }
+                        
                     }
                 }
             }
@@ -172,18 +162,6 @@
                             right: 13%;
                             left: auto;
                             margin-top: 1%;
-                        }
-        
-                        .pink-circle{
-                            @include circle-1200(#FB3B64);
-                        }
-        
-                        .blue-circle{
-                            @include circle-1200(#08A6E4);
-                        }
-        
-                        .green-circle{
-                            @include circle-1200(#55DFB4);
                         }
                     }
                 }
@@ -230,17 +208,6 @@
                             right: 15%;
                             left: auto;
                             margin-top: 1%;
-                        }
-                        .pink-circle{
-                            @include circle-1920(#FB3B64);
-                        }
-        
-                        .blue-circle{
-                            @include circle-1920(#08A6E4);
-                        }
-        
-                        .green-circle{
-                            @include circle-1920(#55DFB4);
                         }
                     }
                 }
