@@ -84,25 +84,6 @@
         .characteristics-pair{
             text-align: start;
 
-            .green-box{
-                @include box(#55DFB4);
-                background-image: url('../../assets/Vector\ 3.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
-            }
-
-            .pink-box{
-                @include box(#EB476E);
-                text-align: center;
-
-                p{
-                    color:#EB476E ;
-                    font-size: 11px;
-                    margin: 0;
-                }
-            }
-
             p{
                 display: inline-block;
             }
@@ -173,17 +154,9 @@
             align-items: center;
             .characteristics-pair{
                 width: 60%;
-                .pink-box{
-                    width: 0.7rem;
-                    height: 0.7rem;
-                    p{
-                        font-size: 0.7rem;
-                    }
-                }
-
-                .green-box{
-                    width: 0.7rem;
-                    height: 0.7rem;
+                img{
+                    width: 1rem;
+                    height: 1rem;
                 }
                 p{
                     font-size: 1rem;
@@ -228,15 +201,7 @@
             align-items: center;
             .characteristics-pair{
                 width: 60%;
-                .pink-box{
-                    width: 1.5rem;
-                    height: 1.5rem;
-                    p{
-                        font-size: 2rem;
-                    }
-                }
-
-                .green-box{
+                img{
                     width: 1.5rem;
                     height: 1.5rem;
                 }

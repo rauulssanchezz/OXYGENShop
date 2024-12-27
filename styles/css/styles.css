@@ -650,30 +650,6 @@ header h1 {
 .pricing .pricing-element-red-container .pricing-element .characteristics .characteristics-pair {
   text-align: start;
 }
-.pricing .pricing-element-red-container .pricing-element .characteristics .characteristics-pair .green-box {
-  width: 11px;
-  height: 11px;
-  border-radius: 2px;
-  border: 1px solid #55DFB4;
-  display: inline-block;
-  background-image: url("../../assets/Vector 3.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-.pricing .pricing-element-red-container .pricing-element .characteristics .characteristics-pair .pink-box {
-  width: 11px;
-  height: 11px;
-  border-radius: 2px;
-  border: 1px solid #EB476E;
-  display: inline-block;
-  text-align: center;
-}
-.pricing .pricing-element-red-container .pricing-element .characteristics .characteristics-pair .pink-box p {
-  color: #EB476E;
-  font-size: 11px;
-  margin: 0;
-}
 .pricing .pricing-element-red-container .pricing-element .characteristics .characteristics-pair p {
   display: inline-block;
 }
@@ -725,30 +701,6 @@ header h1 {
 .pricing .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair {
   text-align: start;
 }
-.pricing .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair .green-box {
-  width: 11px;
-  height: 11px;
-  border-radius: 2px;
-  border: 1px solid #55DFB4;
-  display: inline-block;
-  background-image: url("../../assets/Vector 3.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-.pricing .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair .pink-box {
-  width: 11px;
-  height: 11px;
-  border-radius: 2px;
-  border: 1px solid #EB476E;
-  display: inline-block;
-  text-align: center;
-}
-.pricing .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair .pink-box p {
-  color: #EB476E;
-  font-size: 11px;
-  margin: 0;
-}
 .pricing .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair p {
   display: inline-block;
 }
@@ -796,30 +748,6 @@ header h1 {
 }
 .pricing .pricing-element-green-container .pricing-element .characteristics .characteristics-pair {
   text-align: start;
-}
-.pricing .pricing-element-green-container .pricing-element .characteristics .characteristics-pair .green-box {
-  width: 11px;
-  height: 11px;
-  border-radius: 2px;
-  border: 1px solid #55DFB4;
-  display: inline-block;
-  background-image: url("../../assets/Vector 3.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-.pricing .pricing-element-green-container .pricing-element .characteristics .characteristics-pair .pink-box {
-  width: 11px;
-  height: 11px;
-  border-radius: 2px;
-  border: 1px solid #EB476E;
-  display: inline-block;
-  text-align: center;
-}
-.pricing .pricing-element-green-container .pricing-element .characteristics .characteristics-pair .pink-box p {
-  color: #EB476E;
-  font-size: 11px;
-  margin: 0;
 }
 .pricing .pricing-element-green-container .pricing-element .characteristics .characteristics-pair p {
   display: inline-block;
@@ -889,30 +817,6 @@ header h1 {
   .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair {
     text-align: start;
   }
-  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair .green-box {
-    width: 11px;
-    height: 11px;
-    border-radius: 2px;
-    border: 1px solid #55DFB4;
-    display: inline-block;
-    background-image: url("../../assets/Vector 3.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
-  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair .pink-box {
-    width: 11px;
-    height: 11px;
-    border-radius: 2px;
-    border: 1px solid #EB476E;
-    display: inline-block;
-    text-align: center;
-  }
-  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair .pink-box p {
-    color: #EB476E;
-    font-size: 11px;
-    margin: 0;
-  }
   .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair p {
     display: inline-block;
   }
@@ -951,16 +855,9 @@ header h1 {
   .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair {
     width: 60%;
   }
-  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair .pink-box {
-    width: 0.7rem;
-    height: 0.7rem;
-  }
-  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair .pink-box p {
-    font-size: 0.7rem;
-  }
-  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair .green-box {
-    width: 0.7rem;
-    height: 0.7rem;
+  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair img {
+    width: 1rem;
+    height: 1rem;
   }
   .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair p {
     font-size: 1rem;
@@ -1004,30 +901,6 @@ header h1 {
   .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair {
     text-align: start;
   }
-  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair .green-box {
-    width: 11px;
-    height: 11px;
-    border-radius: 2px;
-    border: 1px solid #55DFB4;
-    display: inline-block;
-    background-image: url("../../assets/Vector 3.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
-  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair .pink-box {
-    width: 11px;
-    height: 11px;
-    border-radius: 2px;
-    border: 1px solid #EB476E;
-    display: inline-block;
-    text-align: center;
-  }
-  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair .pink-box p {
-    color: #EB476E;
-    font-size: 11px;
-    margin: 0;
-  }
   .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair p {
     display: inline-block;
   }
@@ -1066,16 +939,9 @@ header h1 {
   .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair {
     width: 60%;
   }
-  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair .pink-box {
-    width: 0.7rem;
-    height: 0.7rem;
-  }
-  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair .pink-box p {
-    font-size: 0.7rem;
-  }
-  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair .green-box {
-    width: 0.7rem;
-    height: 0.7rem;
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair img {
+    width: 1rem;
+    height: 1rem;
   }
   .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair p {
     font-size: 1rem;
@@ -1119,30 +985,6 @@ header h1 {
   .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair {
     text-align: start;
   }
-  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair .green-box {
-    width: 11px;
-    height: 11px;
-    border-radius: 2px;
-    border: 1px solid #55DFB4;
-    display: inline-block;
-    background-image: url("../../assets/Vector 3.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
-  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair .pink-box {
-    width: 11px;
-    height: 11px;
-    border-radius: 2px;
-    border: 1px solid #EB476E;
-    display: inline-block;
-    text-align: center;
-  }
-  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair .pink-box p {
-    color: #EB476E;
-    font-size: 11px;
-    margin: 0;
-  }
   .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair p {
     display: inline-block;
   }
@@ -1181,16 +1023,9 @@ header h1 {
   .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair {
     width: 60%;
   }
-  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair .pink-box {
-    width: 0.7rem;
-    height: 0.7rem;
-  }
-  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair .pink-box p {
-    font-size: 0.7rem;
-  }
-  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair .green-box {
-    width: 0.7rem;
-    height: 0.7rem;
+  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair img {
+    width: 1rem;
+    height: 1rem;
   }
   .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair p {
     font-size: 1rem;
@@ -1238,14 +1073,7 @@ header h1 {
   .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair {
     width: 60%;
   }
-  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair .pink-box {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair .pink-box p {
-    font-size: 2rem;
-  }
-  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair .green-box {
+  .pricing .pricing-elements .pricing-element-red-container .pricing-element .characteristics .characteristics-pair img {
     width: 1.5rem;
     height: 1.5rem;
   }
@@ -1286,14 +1114,7 @@ header h1 {
   .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair {
     width: 60%;
   }
-  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair .pink-box {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair .pink-box p {
-    font-size: 2rem;
-  }
-  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair .green-box {
+  .pricing .pricing-elements .pricing-element-blue-container .pricing-element .characteristics .characteristics-pair img {
     width: 1.5rem;
     height: 1.5rem;
   }
@@ -1334,14 +1155,7 @@ header h1 {
   .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair {
     width: 60%;
   }
-  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair .pink-box {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair .pink-box p {
-    font-size: 2rem;
-  }
-  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair .green-box {
+  .pricing .pricing-elements .pricing-element-green-container .pricing-element .characteristics .characteristics-pair img {
     width: 1.5rem;
     height: 1.5rem;
   }
