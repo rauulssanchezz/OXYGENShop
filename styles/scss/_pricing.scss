@@ -2,7 +2,7 @@
 
 .pricing{
     padding: 5%;
-
+    width: 90%;
     h2{
         font-weight: normal;
     }
@@ -10,12 +10,12 @@
     .pricing-element-red-container{
         @include pricing-element-container(#FB3B64);
         .pricing-element{
-            .plan{
-                h4{
-                    visibility: hidden;
+                    .plan{
+                        h4{
+                            visibility: hidden;
+                        }
+                    }
                 }
-            }
-        }
     }
 
     .pricing-element-blue-container{

@@ -613,6 +613,7 @@ header h1 {
 }
 .pricing {
   padding: 5%;
+  width: 90%;
 }
 .pricing h2 {
   font-weight: normal;
@@ -623,7 +624,6 @@ header h1 {
 .pricing .pricing-element-red-container .pricing-element {
   border: 2px solid #FB3B64;
   border-radius: 18px;
-  padding: 2%;
   font-size: 0.6rem;
   width: 100%;
 }
@@ -674,7 +674,6 @@ header h1 {
 .pricing .pricing-element-blue-container .pricing-element {
   border: 2px solid #07ACE6;
   border-radius: 18px;
-  padding: 2%;
   font-size: 0.6rem;
   width: 100%;
 }
@@ -722,7 +721,6 @@ header h1 {
 .pricing .pricing-element-green-container .pricing-element {
   border: 2px solid #55DFB4;
   border-radius: 18px;
-  padding: 2%;
   font-size: 0.6rem;
   width: 100%;
 }
@@ -790,7 +788,6 @@ header h1 {
   .pricing .pricing-elements .pricing-element-green-container .pricing-element {
     border: 2px solid #55DFB4;
     border-radius: 18px;
-    padding: 2%;
     font-size: 0.6rem;
     width: 100%;
   }
@@ -874,7 +871,6 @@ header h1 {
   .pricing .pricing-elements .pricing-element-red-container .pricing-element {
     border: 2px solid #FB3B64;
     border-radius: 18px;
-    padding: 2%;
     font-size: 0.6rem;
     width: 100%;
   }
@@ -958,7 +954,6 @@ header h1 {
   .pricing .pricing-elements .pricing-element-blue-container .pricing-element {
     border: 2px solid #07ACE6;
     border-radius: 18px;
-    padding: 2%;
     font-size: 0.6rem;
     width: 100%;
   }
@@ -1215,6 +1210,12 @@ header h1 {
   position: static;
   margin-top: 1.5rem;
   width: 100%;
+  height: 1rem;
+  outline: none;
+  transition: all 0.3s ease-in;
+}
+.any-questions .form form input:focus {
+  border-bottom: 2px solid #08A6E4;
 }
 .any-questions .form form label {
   width: 100%;
@@ -1229,6 +1230,9 @@ header h1 {
     width: 20%;
     padding: 3%;
     margin-left: 30rem;
+  }
+  .any-questions .form form input {
+    font-size: 1rem;
   }
   .any-questions .img-and-text {
     width: 25%;
@@ -1250,6 +1254,9 @@ header h1 {
   }
   .any-questions h2 {
     font-size: 2rem;
+  }
+  .any-questions .form form input {
+    font-size: 1rem;
   }
   .any-questions .any-questions-container {
     display: flex;
@@ -1293,6 +1300,10 @@ header h1 {
   .any-questions input[type=checkbox] {
     transform: scale(3);
     margin: 5rem 1% 1% 0;
+  }
+  .any-questions .form form input {
+    height: 2.5rem;
+    font-size: 2rem;
   }
   .any-questions .any-questions-container div .contact-info {
     margin-top: 5rem;
