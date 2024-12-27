@@ -234,18 +234,18 @@ header h1 {
     width: 30%;
   }
   .container .most-popular .most-popular-element-container .most-popular-element div img {
-    width: 6%;
-    left: 12.5rem;
+    width: 4rem;
+    left: 20.5%;
   }
   .container .most-popular .most-popular-element-container .most-popular-element div .eye-img {
-    width: 8%;
-    right: 27rem;
+    width: 5rem;
+    right: 42%;
     left: auto;
     margin-top: 2%;
   }
   .container .most-popular .most-popular-element-container .most-popular-element div .catalog-img {
-    width: 6%;
-    right: 9rem;
+    width: 4rem;
+    right: 13%;
     left: auto;
     margin-top: 1%;
   }
@@ -294,21 +294,19 @@ header h1 {
     width: 30%;
   }
   .container .most-popular .most-popular-element-container .most-popular-element div img {
-    width: 4%;
-    left: 21rem;
-    margin-top: 1%;
+    width: 4rem;
+    left: 20.5%;
   }
   .container .most-popular .most-popular-element-container .most-popular-element div .eye-img {
-    width: 5%;
-    right: 45rem;
+    width: 5rem;
+    right: 45%;
     left: auto;
     margin-top: 2%;
   }
   .container .most-popular .most-popular-element-container .most-popular-element div .catalog-img {
-    width: 3%;
-    right: 16rem;
+    right: 15%;
     left: auto;
-    margin-top: 2%;
+    margin-top: 1%;
   }
   .container .most-popular .most-popular-element-container .most-popular-element div .pink-circle {
     display: inline-block;

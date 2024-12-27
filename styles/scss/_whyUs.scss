@@ -156,20 +156,20 @@
                     width: 30%;
                     div{
                         img{
-                            width: 6%;
-                            left: 12.5rem;
+                            width: 4rem;
+                            left: 20.5%;
                         }
         
                         .eye-img{
-                            width: 8%;
-                            right: 27rem;
+                            width: 5rem;
+                            right: 42%;
                             left: auto;
                             margin-top: 2%;
                         }
         
                         .catalog-img{
-                            width: 6%;
-                            right: 9rem;
+                            width: 4rem;
+                            right: 13%;
                             left: auto;
                             margin-top: 1%;
                         }
@@ -215,23 +215,21 @@
                     width: 30%;
                     div{
                         img{
-                            width: 4%;
-                            left: 21rem;
-                            margin-top: 1%;
+                            width: 4rem;
+                            left: 20.5%;
                         }
         
                         .eye-img{
-                            width: 5%;
-                            right: 45rem;
+                            width: 5rem;
+                            right: 45%;
                             left: auto;
                             margin-top: 2%;
                         }
         
                         .catalog-img{
-                            width: 3%;
-                            right: 16rem;
+                            right: 15%;
                             left: auto;
-                            margin-top: 2%;
+                            margin-top: 1%;
                         }
                         .pink-circle{
                             @include circle-1920(#FB3B64);
