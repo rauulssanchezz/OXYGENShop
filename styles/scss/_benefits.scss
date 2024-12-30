@@ -5,33 +5,54 @@
     padding: 10% 7%;
 
     .benefits-element{
-        @include benefit-element();
-        .pink-circle{
-            position: absolute;
-            right: 4rem;
-            background: #FB3B64;
-            width: 5rem;
-            height: 5rem;
-            border-radius: 1rem;
-            z-index: 1;
-            top: 0rem;
-            transform: rotate(45deg);
+     @include benefit-element();
+
+        .circle-and-img-container{
+            width:fit-content;
+            margin: auto;
+            margin-bottom: 2rem;
+            img{
+                position: relative;
+                display: inline-block;
+                z-index: 10;
+                top: 2rem;
+                right: 3rem;
+                transform: rotate(-45deg);
+            }
+            .pink-circle{
+                position: relative;
+                background: #FB3B64;
+                left: 2rem;
+                width: 5rem;
+                height: 5rem;
+                border-radius: 1rem;
+                z-index: 1;
+                transform: rotate(45deg);
+            }
         }
     }
 
     .benefits-element-iphone{
         @include benefit-element();
-        .blue-circle{
-            position: relative;
-            background: #08A6E4;
-            left: 5.5rem;
-            width: 8rem;
-            height: 8rem;
-            border-radius: 100%;
-            z-index: 1;
-            top: 0;
-            img{
-                left: 1rem;
+
+        .circle-and-img-container{
+            width: fit-content;
+            margin: auto;
+            .blue-circle{
+                position: relative;
+                background: #08A6E4;
+                width: 8rem;
+                height: 8rem;
+                border-radius: 100%;
+                z-index: 1;
+                top: 0;
+                img{
+                    left: 1rem;
+                    position: relative;
+                    display: inline-block;
+                    z-index: 10;
+                    margin-top: 5%;
+                }
             }
         }
     }
@@ -58,48 +79,10 @@
     }
 }
 
-@media screen and (max-width: 320px){
-    .benefits{
-        .benefits-element{
-            .circle-and-img-container{
-                .pink-circle{
-                    right: 1rem;
-                }
-            }
-        }
-        .benefits-element-iphone{
-            @include benefit-element();
-            .blue-circle{
-                left: 2rem;
-            }
-        }
-    }
-}
-
 @media  screen and (min-width: 768px){
 
     .benefits {
         padding: 7% 7%;
-        .benefits-element{
-    
-            .circle-and-img-container{
-    
-                img{
-                    margin-top: 3%;
-                }
-    
-                .pink-circle{
-                    right: 10rem;
-                }
-            }
-        }
-
-        .benefits-element-iphone{
-                .blue-circle{
-                    left: 11rem;
-                }
-            }
-
         .benefits-element-trumpet{
             text-align: start;
             background: #55DFB4;
@@ -115,49 +98,30 @@
     }
 } 
 
-@media screen and (min-width: 900px) {
-    .benefits{
-        .benefits-element{
-            .circle-and-img-container{
-                .pink-circle{
-                    right: 12rem;
-                }
-            }
-         }
-         .benefits-element-iphone{
-            .blue-circle{
-                right: 13rem;
-            }
-        }
-    }
-}
-
 @media  screen and (min-width: 1200px){
 
     .benefits {
         padding: 1% 15%;
 
         .benefits-element{
-            display: flex;
-            flex-direction: row-reverse;
-            padding: 5%;
 
             .benefits-element-text-mac{
                 border-bottom: solid 4px #FB3B64;
             }
 
             .circle-and-img-container{
-                margin-top: 1%;
-                height: 100%;
+                margin: auto;
+                margin-top: 3rem;
                 img{
                     margin-top: 1%;
-                    width: 100%;
+                    width: 170%;
                 }
     
                 .pink-circle{
                     right: 0rem;
                     bottom: 4rem;
                     width: 7rem;
+                    border-radius: 1.5rem;
                 }
             }
         }
@@ -179,7 +143,6 @@
                     width: 120%;
                 }
                 .blue-circle{
-                    left: 0rem;
                     bottom: 20rem;
                     width: 15rem;
                     height: 15rem;
@@ -231,22 +194,22 @@
             .benefits-element-text-mac{
                 border-bottom: solid 4px #FB3B64;
                 font-size: 1.5rem;
+                width: 50%;
             }
 
             .circle-and-img-container{
-                margin-top: 1%;
-                height: 100%;
+                margin-bottom: 2rem;
                 img{
-                    margin-top: 15%;
-                    margin-left: 5%;
+                    top: 5rem;
+                    right: 5rem;
                 }
     
                 .pink-circle{
                     right: 0rem;
-                    top: 2rem;
                     bottom: 0rem;
-                    width: 10rem;
-                    height: 10rem;
+                    width: 11rem;
+                    height: 11rem;
+                    border-radius:2rem ;
                 }
             }
         }
@@ -265,10 +228,9 @@
                 margin: 0;
                 height: 100%;
                 .blue-circle{
-                    right: 8rem;
                     bottom: 20rem;
-                    width: 25rem;
-                    height: 25rem;
+                    width: 20rem;
+                    height: 20rem;
                     img{
                         
                         left: 1rem;
