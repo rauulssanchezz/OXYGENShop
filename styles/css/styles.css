@@ -263,18 +263,18 @@ header h1 {
   z-index: 10;
   margin-top: 5%;
 }
-.benefits .benefits-element-iphone img {
-  left: 1rem;
-}
 .benefits .benefits-element-iphone .blue-circle {
-  position: absolute;
-  right: 5rem;
+  position: relative;
   background: #08A6E4;
+  left: 5.5rem;
   width: 8rem;
   height: 8rem;
   border-radius: 100%;
   z-index: 1;
   top: 0;
+}
+.benefits .benefits-element-iphone .blue-circle img {
+  left: 1rem;
 }
 .benefits .benefits-element-trumpet {
   text-align: start;
@@ -351,7 +351,7 @@ header h1 {
     right: 10rem;
   }
   .benefits .benefits-element-iphone .blue-circle {
-    right: 11rem;
+    left: 11rem;
   }
   .benefits .benefits-element-trumpet {
     text-align: start;
@@ -396,6 +396,7 @@ header h1 {
   .benefits .benefits-element .circle-and-img-container .pink-circle {
     right: 0rem;
     bottom: 4rem;
+    width: 7rem;
   }
   .benefits .benefits-element-iphone {
     display: flex;
@@ -493,15 +494,14 @@ header h1 {
     margin: 0;
     height: 100%;
   }
-  .benefits .benefits-element-iphone .circle-and-img-container img {
-    top: 4rem;
-    left: 2rem;
-  }
   .benefits .benefits-element-iphone .circle-and-img-container .blue-circle {
     right: 8rem;
     bottom: 20rem;
     width: 25rem;
     height: 25rem;
+  }
+  .benefits .benefits-element-iphone .circle-and-img-container .blue-circle img {
+    left: 1rem;
   }
   .benefits .bottom-benefits {
     display: flex;
@@ -1262,7 +1262,6 @@ footer {
 }
 footer .text {
   display: inline-block;
-  width: 60%;
 }
 footer .text h2 {
   font-weight: normal;
@@ -1275,14 +1274,12 @@ footer .text p {
   margin: 0;
 }
 footer .footer-imgs {
-  width: 30%;
   text-align: center;
   display: inline-block;
   margin-left: 2rem;
 }
 footer .footer-imgs img {
   display: inline-block;
-  margin-left: 1rem;
 }
 
 @media screen and (min-width: 768px) {
