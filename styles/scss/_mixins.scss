@@ -3,9 +3,9 @@
 @mixin circle($color){
     display: inline-block;
     background: $color;
-    width: 10rem;
-    height: 4rem;
-    border-radius: 100%;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
     position: relative;
 }
 

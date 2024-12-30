@@ -40,29 +40,24 @@
 
                 div{
                     img{
-                        display: inline-block;
-                        width: 12%;
                         position: absolute;
-                        right: 38%;
                         z-index: 200;
+                        width: 4rem;
+                        margin-left: 3rem;
                     }
     
                     .eye-img{
-                        display: inline-block;
-                        width: 15%;
                         position: absolute;
-                        right: 38%;
+                        width: 5rem;
                         z-index: 200;
-                        margin-top: 5%;
+                        margin-left: 0.5rem;
+                        margin-top: 1.5rem;
                     }
     
                     .catalog-img{
-                        display: inline-block;
-                        width: 12%;
                         position: absolute;
-                        right: 38%;
                         z-index: 200;
-                        margin-top: 2%;
+                        margin-top: 1rem;
                     }
     
                     p{
@@ -100,31 +95,6 @@
                 font-size: 2.5rem;
             }
         }
-
-        .most-popular{
-            .most-popular-element-container{
-                .most-popular-element{
-                    div{
-                        img{
-                            width: 10%;
-                            right: 16rem;
-                        }
-        
-                        .eye-img{
-                            width: 12%;
-                            right: 15.5rem;
-                        }
-        
-                        .catalog-img{
-                            width: 10%;
-                            right: 16rem;
-                        }
-        
-                        
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -144,26 +114,6 @@
                 justify-content: space-around;
                 .most-popular-element{
                     width: 30%;
-                    div{
-                        img{
-                            width: 4rem;
-                            left: 20.5%;
-                        }
-        
-                        .eye-img{
-                            width: 5rem;
-                            right: 42%;
-                            left: auto;
-                            margin-top: 2%;
-                        }
-        
-                        .catalog-img{
-                            width: 4rem;
-                            right: 13%;
-                            left: auto;
-                            margin-top: 1%;
-                        }
-                    }
                 }
             }
         }
@@ -191,25 +141,6 @@
                 justify-content: space-around;
                 .most-popular-element{
                     width: 30%;
-                    div{
-                        img{
-                            width: 4rem;
-                            left: 20.5%;
-                        }
-        
-                        .eye-img{
-                            width: 5rem;
-                            right: 45%;
-                            left: auto;
-                            margin-top: 2%;
-                        }
-        
-                        .catalog-img{
-                            right: 15%;
-                            left: auto;
-                            margin-top: 1%;
-                        }
-                    }
                 }
             }
         }
