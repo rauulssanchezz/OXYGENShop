@@ -337,7 +337,7 @@ header h1 {
     margin-top: 5%;
   }
   .benefits .benefits-element-iphone .blue-circle {
-    right: 3rem;
+    left: 2rem;
   }
 }
 @media screen and (min-width: 768px) {
