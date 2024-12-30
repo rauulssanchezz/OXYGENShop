@@ -22,7 +22,7 @@
 
     input[type="button"]{
         background: #08A6E4;
-        width: 40%;
+        width: 8rem;
         padding: 4% 0;
         border: none;
         color: white;
@@ -69,6 +69,23 @@
                 position: static;
                 margin-top: 2rem;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 320px){
+    .any-questions{
+        input[type="button"]{
+            background: #08A6E4;
+            width: 8rem;
+            padding: 4% 0;
+            border: none;
+            color: white;
+            border-radius: 35px;
+            box-shadow: 5px 10px 14px 0px #07ACE64A;
+            font-size: 1rem;
+            margin-top: 3rem;
+            margin-left: 7rem;
         }
     }
 }

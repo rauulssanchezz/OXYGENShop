@@ -10,7 +10,7 @@
             position: absolute;
             right: 4rem;
             background: #FB3B64;
-            width: 30%;
+            width: 5rem;
             height: 5rem;
             border-radius: 1rem;
             z-index: 1;
@@ -21,11 +21,14 @@
 
     .benefits-element-iphone{
         @include benefit-element();
+        img{
+            left: 1rem;
+        }
         .blue-circle{
             position: absolute;
             right: 5rem;
             background: #08A6E4;
-            width: 50%;
+            width: 8rem;
             height: 8rem;
             border-radius: 100%;
             z-index: 1;
@@ -55,6 +58,23 @@
     }
 }
 
+@media screen and (max-width: 320px){
+    .benefits{
+        .benefits-element{
+            .circle-and-img-container{
+                .pink-circle{
+                    right: 1rem;
+                }
+            }
+        }
+        .benefits-element-iphone{
+            @include benefit-element();
+            .blue-circle{
+                right: 3rem;
+            }
+        }
+    }
+}
 
 @media  screen and (min-width: 768px){
 
@@ -70,20 +90,13 @@
     
                 .pink-circle{
                     right: 10rem;
-                    width: 20%;
-                    height: 5rem;
                 }
             }
         }
 
         .benefits-element-iphone{
                 .blue-circle{
-                    position: absolute;
                     right: 11rem;
-                    background: #08A6E4;
-                    width: 30%;
-                    height: 8rem;
-                    top: 0rem;
                 }
             }
 
@@ -96,12 +109,28 @@
             img{
                 width: 70%;
                 height: 70%;
-                position: relative;
                 top: 3rem;
             }
         }
     }
 } 
+
+@media screen and (min-width: 900px) {
+    .benefits{
+        .benefits-element{
+            .circle-and-img-container{
+                .pink-circle{
+                    right: 12rem;
+                }
+            }
+         }
+         .benefits-element-iphone{
+            .blue-circle{
+                right: 13rem;
+            }
+        }
+    }
+}
 
 @media  screen and (min-width: 1200px){
 
@@ -128,9 +157,6 @@
                 .pink-circle{
                     right: 0rem;
                     bottom: 4rem;
-                    width: 50%;
-                    height: 6rem;
-                    border-radius: 1.5rem;
                 }
             }
         }
@@ -148,15 +174,14 @@
                 height: 100%;
                 width: 40%;
                 img{
-                    margin-top: 0rem;
+                    margin-top: 2rem;
                     width: 120%;
                 }
                 .blue-circle{
                     left: 0rem;
-                    background: #08A6E4;
-                    width: 90%;
-                    height: 13rem;
                     bottom: 20rem;
+                    width: 15rem;
+                    height: 15rem;
                 }
             }
         }
@@ -185,7 +210,6 @@
                     img{
                         width: 100%;
                         height: auto;
-                        position: relative;
                         bottom: 0;
                     }
                 }
@@ -214,16 +238,14 @@
                 img{
                     margin-top: 15%;
                     margin-left: 5%;
-                    width: 100%;
                 }
     
                 .pink-circle{
                     right: 0rem;
-                    left: 12rem;
+                    top: 2rem;
                     bottom: 0rem;
-                    width: 50%;
+                    width: 10rem;
                     height: 10rem;
-                    border-radius: 2rem;
                 }
             }
         }
@@ -242,18 +264,14 @@
                 margin: 0;
                 height: 100%;
                 img{
-                    position: absolute;
                     top: 4rem;
                     left: 2rem;
-                    width: 120%;
                 }
                 .blue-circle{
-                    position: relative;
                     right: 8rem;
-                    background: #08A6E4;
-                    width: 100%;
-                    height: 25rem;
                     bottom: 20rem;
+                    width: 25rem;
+                    height: 25rem;
                 }
             }
         }
@@ -283,7 +301,6 @@
                     img{
                         width: 100%;
                         height: auto;
-                        position: relative;
                     }
                 }
             }
