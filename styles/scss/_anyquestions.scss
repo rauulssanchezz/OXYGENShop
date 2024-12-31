@@ -22,18 +22,19 @@
 
     input[type="button"]{
         background: #08A6E4;
-        width: 8rem;
-        padding: 4% 0;
+        width: 10rem;
         border: none;
         color: white;
         border-radius: 35px;
         box-shadow: 5px 10px 14px 0px #07ACE64A;
         font-size: 1rem;
-        margin-top: 3rem;
-        margin-left: 14rem;
+        position: absolute;
+        right: 2rem;
+        padding: 0.8rem 0;
+        bottom: -2rem;
     }
     input[type="checkbox"]{
-        margin-top: 5rem;
+        margin-top: 3rem;
     }
 
     label{
@@ -73,31 +74,10 @@
     }
 }
 
-@media screen and (max-width: 320px){
-    .any-questions{
-        input[type="button"]{
-            background: #08A6E4;
-            width: 8rem;
-            padding: 4% 0;
-            border: none;
-            color: white;
-            border-radius: 35px;
-            box-shadow: 5px 10px 14px 0px #07ACE64A;
-            font-size: 1rem;
-            margin-top: 3rem;
-            margin-left: 7rem;
-        }
-    }
-}
+
 
 @media screen and (min-width: 768px){
     .any-questions{
-        input[type="button"]{
-            width: 20%;
-            padding: 3%;
-            margin-left: 30rem;
-        }
-
         .form{
             form{
                 input{
@@ -126,6 +106,9 @@
 @media screen and (min-width: 1200px) {
     .any-questions{
         padding: 5% 15%;
+        input[type="button"]{
+            right: 10rem;
+        }
         h2{
             font-size: 2rem;
         }
@@ -161,12 +144,6 @@
                 }
             }
         }
-        input[type="button"]{
-            width: 25%;
-            padding: 1.5%;
-            margin-left: 35rem;
-            font-size: 1rem;
-        }
     }
 }
 
@@ -176,6 +153,10 @@
         flex-direction: column;
         align-items: end;
         font-size: 1rem;
+
+        input[type="button"]{
+            right: 15rem;
+        }
 
         h2{
             font-size: 2rem;
@@ -214,12 +195,6 @@
                     font-size: 1rem;
                 }
             }
-        }
-        input[type="button"]{
-            font-size: 1.2rem;
-            width: 20%;
-            padding: 1.5% 0;
-            border-radius: 10rem;
         }
     }
 }
