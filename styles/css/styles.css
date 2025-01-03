@@ -1047,7 +1047,7 @@ header h1 {
   background-position: center;
 }
 .any-questions input[type=checkbox]:checked {
-  background-image: url("../../assets/Cross.png");
+  background-image: none;
 }
 .any-questions label {
   font-size: 0.8rem;
