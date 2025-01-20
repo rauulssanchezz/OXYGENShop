@@ -1,6 +1,7 @@
 const main = () => {
     try{
         toggleMenu()
+        positionMenu()
     }catch(error){
         console.error(error)
     }
@@ -29,4 +30,20 @@ function toggleMenu() {
         toggleMenu.style.marginTop= toggleMenu.style.marginTop === '0.5rem' ? '0' : '0.5rem'
         nav.style.display = nav.style.display === 'block' ? 'none' : 'block'
     })
+}
+
+function positionMenu() {
+    const lists = document.getElementsByClassName('nav-li')
+
+    if(window.innerWidth >= 1200){
+        for(let i = 0; i < lists.length; i++){
+            lists[i].addEventListener('click', () => {
+                for(let j = 0; j < lists.length; j++){
+                    lists[j].style.border = 'none'
+                }
+                lists[i].style.borderBottom = '2px solid #08A6E4'
+            })
+        }
+
+    }
 }
