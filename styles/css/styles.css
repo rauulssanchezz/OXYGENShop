@@ -1062,12 +1062,12 @@ header h1 {
   border: solid 2px gray;
   width: 1rem;
   height: 1rem;
+  background-image: none;
+}
+.any-questions input[type=checkbox]:checked {
   background-image: url("../../assets/Checkmark 1.png");
   background-repeat: no-repeat;
   background-position: center;
-}
-.any-questions input[type=checkbox]:checked {
-  background-image: none;
 }
 .any-questions label {
   font-size: 0.8rem;

@@ -71,7 +71,7 @@ function handleContactForm(){
     contactInputButton.addEventListener('click', () => {
         name = nameInput.value
         email = emailInput.value
-        check = checkBoxPrivacity.value
+        check = checkBoxPrivacity.checked
 
         nameInput.style.borderBottom = '2px solid gray'
         emailInput.style.borderBottom = '2px solid gray'
