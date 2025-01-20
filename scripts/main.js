@@ -34,6 +34,7 @@ function toggleMenu() {
 
 function positionMenu() {
     const lists = document.getElementsByClassName('nav-li')
+    const returnButton = document.getElementById('return-button')
 
     if(window.innerWidth >= 1200){
         for(let i = 0; i < lists.length; i++){
@@ -44,6 +45,13 @@ function positionMenu() {
                 lists[i].style.borderBottom = '2px solid #08A6E4'
             })
         }
+
+        returnButton.addEventListener('click', () => {
+            for(let i = 0; i < lists.length; i++){
+                lists[i].style.border = 'none'
+            }
+            lists[0].style.borderBottom = '2px solid #08A6E4'
+        })
 
     }
 }
