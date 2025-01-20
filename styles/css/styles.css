@@ -11,14 +11,12 @@ header {
 header nav {
   display: none;
 }
-
-header nav ul{
+header nav ul {
   list-style: none;
   margin: 1rem 0;
   padding: 0;
   text-align: start;
 }
-
 header nav ul li a {
   text-decoration: 0;
   color: #A5A5A5;
@@ -30,7 +28,6 @@ header nav ul li a:hover {
   color: black;
   font-weight: bold;
 }
-
 header h1 {
   font-weight: normal;
   display: inline-block;
@@ -80,7 +77,6 @@ header h1 {
     margin: 0;
     padding: 0;
   }
-
   header nav ul li {
     height: 100%;
     margin: 0;
@@ -88,7 +84,6 @@ header h1 {
     align-items: center;
     justify-content: center;
   }
-
   header nav ul li a {
     text-decoration: 0;
     color: #A5A5A5;
@@ -99,6 +94,9 @@ header h1 {
   header nav ul li a:hover {
     color: black;
     font-weight: bold;
+  }
+  header nav ul li a:focus {
+    border-bottom: solid 2px #08A6E4;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -1252,6 +1250,29 @@ footer .footer-imgs img {
     width: 5%;
   }
 }
+.return-button {
+  background-color: rgb(219, 213, 213);
+  width: fit-content;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  position: sticky;
+  bottom: 1rem;
+  left: 93%;
+  z-index: 1000;
+  transition: all 0.5s ease-in-out;
+}
+.return-button img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.return-button:hover {
+  background-color: rgb(238, 230, 230);
+  transform: scale(1.1);
+}
+
 :root {
   --primary-color: #08A6E4;
 }

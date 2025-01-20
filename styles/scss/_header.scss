@@ -10,13 +10,35 @@ header{
 
     nav{
         display: none;
-    }
-}
 
-header h1{
-    font-weight: normal;
-    display: inline-block;
-    text-align: center;
+        ul{
+            list-style: none;
+            margin: 1rem 0;
+            padding: 0;
+            text-align: start;
+
+            li{
+                a{
+                    text-decoration: 0;
+                    color: #A5A5A5;
+                    height: 100%;
+                    transition: all 0.3s ease-in;
+                    font-size: 0.7rem;
+                }
+
+                a:hover{
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    h1{
+        font-weight: normal;
+        display: inline-block;
+        text-align: center;
+    }
 }
 
 .toggle-menu{
@@ -63,12 +85,18 @@ header h1{
                 margin: 0;
                 padding: 0;
                  li{
+                    height: 100%;
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
                     a{
                         text-decoration: 0;
                         color: #A5A5A5;
-                        height: 100%;
                         transition: all 0.3s ease-in;
                         font-size: 0.7rem;
+                        height: auto;
                     }
 
                     a:hover{

@@ -1,0 +1,24 @@
+.return-button{
+    background-color: rgb(219, 213, 213);
+    width: fit-content;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+    position: sticky;
+    bottom: 1rem;
+    left: 93%;
+    z-index: 1000;
+
+    transition: all 0.5s ease-in-out;
+
+    img{
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+.return-button:hover{
+    background-color: rgb(238, 230, 230);
+    transform: scale(1.1);
+}
