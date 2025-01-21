@@ -80,24 +80,21 @@ async function handleContactForm () {
         emailInput.style.borderBottom = '2px solid gray'
         checkBoxPrivacity.style.border = '2px solid gray'
 
-        if(name.length > 2 && name. length < 100 
-            && emailRegex.test(email)
-            && check){
+        if(name.length > 2 && name. length < 100 && emailRegex.test(email) && check){
+            const objBody = {
+                name: name,
+                email: email,
+                privacity: check
+            }
 
-                const objBody = {
-                    name: name,
-                    email: email,
-                    privacity: check
-                }
+            const response = await fetchFormData(objBody)
 
-                const response = await fetchFormData(objBody)
-
-                alert('Form sent successfully')
-                nameInput.value = ''
-                emailInput.value = ''
-                nameInput.style.borderBottom = '2px solid gray'
-                emailInput.style.borderBottom = '2px solid gray'
-                checkBoxPrivacity.style.border= '2px solid gray'
+            alert('Form sent successfully')
+            nameInput.value = ''
+            emailInput.value = ''
+            nameInput.style.borderBottom = '2px solid gray'
+            emailInput.style.borderBottom = '2px solid gray'
+            checkBoxPrivacity.style.border= '2px solid gray'
 
         }else if(name === '' || (name <= 2 && name >= 100)){
             alert('Name is required and have to be between 2 and 100 characters')

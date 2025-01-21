@@ -3,8 +3,20 @@
 .pricing{
     padding: 5%;
     width: 90%;
+
     h2{
         font-weight: normal;
+    }
+
+    .currency-select{
+        width: 5rem;
+        height: 1.5rem;
+        border-radius: 20rem;
+        border-color: var(--primary-color);
+        color: var(--primary-color);
+        font-size: 1rem;
+        text-align: center;
+        outline: none;
     }
 
     .pricing-element-red-container{

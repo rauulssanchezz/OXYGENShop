@@ -546,6 +546,16 @@ header h1 {
 .pricing h2 {
   font-weight: normal;
 }
+.pricing .currency-select {
+  width: 5rem;
+  height: 1.5rem;
+  border-radius: 20rem;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  font-size: 1rem;
+  text-align: center;
+  outline: none;
+}
 .pricing .pricing-element-red-container {
   margin-top: 15%;
 }
