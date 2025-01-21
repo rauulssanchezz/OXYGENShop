@@ -1,8 +1,8 @@
 const main = () => {
     try{
-        getCurrencies()
         toggleMenu()
         positionMenu()
+        selectCurrency()
         handleContactForm()
         // progressBar()
     }catch(error){
@@ -149,15 +149,42 @@ function handleContactForm(){
 // }
 
 async function selectCurrency() {
-    const select = document.getElementById('currency-select')
-    let currency = select.value
 
-    
+    const rawCurrencies = await getCurrencies()
+
+    const currencies = rawCurrencies[0]['usd']
+
+    const select = document.getElementById('currency-select')
+    const priceBasic = document.getElementById('price-basic')
+    const pricePro = document.getElementById('price-professional')
+    const pricePremium = document.getElementById('price-premium')
+
+    const currenciesSymbols = {
+        eur: '€',
+        usd: '$',
+        gbp: '£'
+    }
+
+    select.addEventListener('change', () => {
+        const currency = select.value
+
+        const basicValue = Number.parseFloat(priceBasic.textContent.slice(1,priceBasic.textContent.length))
+        const proValue = Number.parseFloat(pricePro.textContent.slice(1,pricePro.textContent.length))
+        const premiumValue = Number.parseFloat(pricePremium.textContent.slice(1,pricePremium.textContent.length))
+
+        const values = [basicValue, proValue, premiumValue]
+
+        const currencyChange = currencies[currency]
+
+        priceBasic.textContent = `${currenciesSymbols[currency]}${(values[0] * currencyChange).toFixed(2)}`
+        pricePro.textContent = `${currenciesSymbols[currency]}${(values[1] * currencyChange).toFixed(2)}`
+        pricePremium.textContent = `${currenciesSymbols[currency]}${(values[2] * currencyChange).toFixed(2)}`
+    })   
 }
 
 async function getCurrencies(){
     let currencies = []
-    await fetch('https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/eur.json')
+    await fetch('https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.json')
     .then((response) => response.json())
     .then((data) => currencies.push(data))
     .catch((error) => console.error(error))
