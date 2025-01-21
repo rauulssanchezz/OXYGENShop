@@ -1,8 +1,10 @@
 const main = () => {
     try{
+        getCurrencies()
         toggleMenu()
         positionMenu()
         handleContactForm()
+        // progressBar()
     }catch(error){
         console.error(error)
     }
@@ -80,6 +82,7 @@ function handleContactForm(){
         if(name.length > 2 && name. length < 100 
             && emailRegex.test(email)
             && check){
+
                 alert('Form sent successfully')
                 nameInput.value = ''
                 emailInput.value = ''
@@ -104,14 +107,60 @@ function handleContactForm(){
             alert('Name is required and have to be between 2 and 100 characters')
             nameInput.style.borderBottom ='2px solid red'
             return
+            
         }else if(email === '' || !email.match(emailRegex)){
             alert('Email is required and have to be a valid email')
             emailInput.style.borderBottom ='2px solid red'
             return
+
         }else if(!check){
             alert('You have to accept the privacity policy')
             checkBoxPrivacity.style.border ='2px solid red'
             return
+
         }
     })
+}
+
+//not functional
+// function progressBar() {
+//     console.log('progressBar')
+//     console.log({window})
+//     console.log({document})
+//     try{
+//         console.log(window.onscroll = () => {})
+//         window.onscroll = () => {
+//             console.log('scrolling')
+//             const progressBar = document.getElementById('progress-bar')
+    
+//             const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
+    
+//             const scrollTop = document.documentElement.scrollTop
+    
+//             const progress = (scrollTop / scrollHeight) * 100
+    
+//             progressBar.style.width = `${progress}%`
+    
+//             console.log(`changing: ${progress}`)
+//         }
+//     }catch(error){
+//         console.error(error)
+//     }
+// }
+
+async function selectCurrency() {
+    const select = document.getElementById('currency-select')
+    let currency = select.value
+
+    
+}
+
+async function getCurrencies(){
+    let currencies = []
+    await fetch('https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/eur.json')
+    .then((response) => response.json())
+    .then((data) => currencies.push(data))
+    .catch((error) => console.error(error))
+
+    return currencies
 }
