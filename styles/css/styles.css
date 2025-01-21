@@ -1348,7 +1348,6 @@ html {
   padding: 0;
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
 }
 
 body {
@@ -1356,7 +1355,6 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
   font-family: "Open Sans", serif;
 }
 body h1, body h2, body h3, body h4 {

@@ -4,7 +4,7 @@ const main = () => {
         positionMenu()
         selectCurrency()
         handleContactForm()
-        // progressBar()
+        progressBar()
         modalForm()
     }catch(error){
         console.error(error)
@@ -116,30 +116,30 @@ async function handleContactForm () {
 }
 
 //not functional
-// function progressBar() {
-//     console.log('progressBar')
-//     console.log({window})
-//     console.log({document})
-//     try{
-//         console.log(window.onscroll = () => {})
-//         window.onscroll = () => {
-//             console.log('scrolling')
-//             const progressBar = document.getElementById('progress-bar')
+function progressBar() {
+    console.log('progressBar')
+    console.log({window})
+    console.log({document})
+    try{
+        console.log(window.onscroll = () => {})
+        window.onscroll = () => {
+            console.log('scrolling')
+            const progressBar = document.getElementById('progress-bar')
     
-//             const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
     
-//             const scrollTop = document.documentElement.scrollTop
+            const scrollTop = document.documentElement.scrollTop
     
-//             const progress = (scrollTop / scrollHeight) * 100
+            const progress = (scrollTop / scrollHeight) * 100
     
-//             progressBar.style.width = `${progress}%`
+            progressBar.style.width = `${progress}%`
     
-//             console.log(`changing: ${progress}`)
-//         }
-//     }catch(error){
-//         console.error(error)
-//     }
-// }
+           console.log(`changing: ${progress}`)
+        }
+    }catch(error){
+        console.error(error)
+    }
+}
 
 async function selectCurrency () {
     const select = document.getElementById('currency-select')
