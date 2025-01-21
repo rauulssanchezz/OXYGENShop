@@ -13,7 +13,7 @@ const main = () => {
 
 main()
 
-function toggleMenu() {
+function toggleMenu () {
     const toggleMenu = document.getElementById('toggle-menu')
     const spans = document.getElementsByClassName('toggle-span')
     const nav = document.getElementById('nav')
@@ -36,7 +36,7 @@ function toggleMenu() {
     })
 }
 
-function positionMenu() {
+function positionMenu () {
     const lists = document.getElementsByClassName('nav-li')
     const returnButton = document.getElementById('return-button')
 
@@ -57,7 +57,7 @@ function positionMenu() {
     })
 }
 
-function handleContactForm(){
+async function handleContactForm () {
     const nameInput = document.getElementById('name')
     const emailInput = document.getElementById('email')
     const contactInputButton = document.getElementById('contact-input-button')
@@ -71,7 +71,7 @@ function handleContactForm(){
     '^[a-zA-Z0-9._%+-]+@[a-zAZ0-9.-]+\.[a-zA-Z]{2,}$'
     )
 
-    contactInputButton.addEventListener('click', () => {
+    contactInputButton.addEventListener('click', async () => {
         name = nameInput.value
         email = emailInput.value
         check = checkBoxPrivacity.checked
@@ -84,25 +84,20 @@ function handleContactForm(){
             && emailRegex.test(email)
             && check){
 
+                const objBody = {
+                    name: name,
+                    email: email,
+                    privacity: check
+                }
+
+                const response = await fetchFormData(objBody)
+
                 alert('Form sent successfully')
                 nameInput.value = ''
                 emailInput.value = ''
                 nameInput.style.borderBottom = '2px solid gray'
                 emailInput.style.borderBottom = '2px solid gray'
                 checkBoxPrivacity.style.border= '2px solid gray'
-
-                fetch('https://jsonplaceholder.typicode.com/posts', {
-                    method: 'POST',
-                    body: JSON.stringify({
-                        name: name,
-                        email: email,
-                        check: check
-                    }),
-                    headers: {
-                        'Content-type': 'application/json; charset=UTF-8',
-                    }
-                }).then((response) => response.json())
-                .then((json) => console.log(json))
 
         }else if(name === '' || (name <= 2 && name >= 100)){
             alert('Name is required and have to be between 2 and 100 characters')
@@ -149,7 +144,7 @@ function handleContactForm(){
 //     }
 // }
 
-async function selectCurrency() {
+async function selectCurrency () {
 
     const rawCurrencies = await getCurrencies()
 
@@ -183,7 +178,7 @@ async function selectCurrency() {
     })   
 }
 
-async function getCurrencies(){
+async function getCurrencies () {
     let currencies = []
     await fetch('https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.json')
     .then((response) => response.json())
@@ -205,7 +200,7 @@ async function modalForm () {
 
     let email = ''
 
-    submitButton.addEventListener('click', () => {
+    submitButton.addEventListener('click', async () => {
         email = emailInput.value
 
         const emailRegex = new RegExp(
@@ -218,18 +213,12 @@ async function modalForm () {
             return
         }
 
-        const response = fetch('https://jsonplaceholder.typicode.com/posts', {
-            method: 'POST',
-            body: JSON.stringify({
-                email: email
-            }),
-            headers: {
-                'Content-type': 'application/json; charset=UTF-8',
-            }
-        })
-        .then((response) => response.json())
-        .then((json) => console.log(json))
-        .catch((error) => console.error(error))
+        const objBody = {
+            email: email
+        }
+
+        const response = await fetchFormData(objBody)
+        console.log({response})
 
         if(response){
             emailInput.value = ''
@@ -260,4 +249,21 @@ async function modalForm () {
             modal.close()
         }
     })
+}
+
+async function fetchFormData (objBody) {
+    let response = ''
+    await fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        body: JSON.stringify({
+            objBody
+        }),
+        headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+        }
+    }).then((response) => response.json())
+    .then((json) => response = json)
+    .catch((error) => console.error(error))
+
+    return response
 }
