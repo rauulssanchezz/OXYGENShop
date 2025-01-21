@@ -142,15 +142,36 @@ async function handleContactForm () {
 // }
 
 async function selectCurrency () {
-
-    const rawCurrencies = await getCurrencies()
-
-    const currencies = rawCurrencies[0]['usd']
-
     const select = document.getElementById('currency-select')
     const priceBasic = document.getElementById('price-basic')
     const pricePro = document.getElementById('price-professional')
     const pricePremium = document.getElementById('price-premium')
+
+    let currency = select.value
+
+    const rawCurrencies = await getCurrencies(currency)
+    const currencies = rawCurrencies[0][currency]
+
+    const basicValue = Number.parseInt(priceBasic.textContent.slice(1,priceBasic.textContent.length))
+    const proValue = Number.parseInt(pricePro.textContent.slice(1,pricePro.textContent.length))
+    const premiumValue = Number.parseInt(pricePremium.textContent.slice(1,pricePremium.textContent.length))
+
+    const currencyChange = []
+
+    currencyChange.push(currencies['eur'])
+    currencyChange.push(currencies['gbp'])
+
+    const values = {
+        usdBasicValue: basicValue,
+        usdProValue: proValue,
+        usdPremiumValue: premiumValue,
+        eurBasicValue: Math.round(basicValue * currencyChange[0]),
+        eurProValue: Math.round(proValue * currencyChange[0]),
+        eurPremiumValue: Math.round(premiumValue * currencyChange[0]),
+        gbpBasicValue: Math.round(basicValue * currencyChange[1]),
+        gbpProValue: Math.round(proValue * currencyChange[1]),
+        gbpPremiumValue: Math.round(premiumValue * currencyChange[1])
+    }
 
     const currenciesSymbols = {
         eur: '€',
@@ -159,25 +180,20 @@ async function selectCurrency () {
     }
 
     select.addEventListener('change', () => {
-        const currency = select.value
+        previousCurrency = currency
+        currency = select.value
 
-        const basicValue = Number.parseFloat(priceBasic.textContent.slice(1,priceBasic.textContent.length))
-        const proValue = Number.parseFloat(pricePro.textContent.slice(1,pricePro.textContent.length))
-        const premiumValue = Number.parseFloat(pricePremium.textContent.slice(1,pricePremium.textContent.length))
+        const selectedCurrency = [`${currency}BasicValue`, `${currency}ProValue`, `${currency}PremiumValue`]
 
-        const values = [basicValue, proValue, premiumValue]
-
-        const currencyChange = currencies[currency]
-
-        priceBasic.textContent = `${currenciesSymbols[currency]}${(values[0] * currencyChange).toFixed(2)}`
-        pricePro.textContent = `${currenciesSymbols[currency]}${(values[1] * currencyChange).toFixed(2)}`
-        pricePremium.textContent = `${currenciesSymbols[currency]}${(values[2] * currencyChange).toFixed(2)}`
+        priceBasic.textContent = `${currenciesSymbols[currency]}${values[selectedCurrency[0]]}`
+        pricePro.textContent = `${currenciesSymbols[currency]}${values[selectedCurrency[1]]}`
+        pricePremium.textContent = `${currenciesSymbols[currency]}${values[selectedCurrency[2]]}`
     })   
 }
 
-async function getCurrencies () {
+async function getCurrencies (currency) {
     let currencies = []
-    await fetch('https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.json')
+    await fetch(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${currency}.json`)
     .then((response) => response.json())
     .then((data) => currencies.push(data))
     .catch((error) => console.error(error))
@@ -185,7 +201,7 @@ async function getCurrencies () {
     return currencies
 }
 
-async function modalForm () {
+function modalForm () {
     const modal = document.getElementById('modal')
     const closeModal = document.getElementById('close-modal')
     modal.showModal()
