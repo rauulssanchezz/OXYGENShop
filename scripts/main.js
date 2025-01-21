@@ -5,6 +5,7 @@ const main = () => {
         selectCurrency()
         handleContactForm()
         // progressBar()
+        modalForm()
     }catch(error){
         console.error(error)
     }
@@ -190,4 +191,73 @@ async function getCurrencies(){
     .catch((error) => console.error(error))
 
     return currencies
+}
+
+async function modalForm () {
+    const modal = document.getElementById('modal')
+    const closeModal = document.getElementById('close-modal')
+    modal.showModal()
+
+    const modalGreet = document.getElementById('modal-greet')
+
+    const emailInput = document.getElementById('email-newsletter')
+    const submitButton = document.getElementById('submit-newsletter')
+
+    let email = ''
+
+    submitButton.addEventListener('click', () => {
+        email = emailInput.value
+
+        const emailRegex = new RegExp(
+            '^[a-zA-Z0-9._%+-]+@[a-zAZ0-9.-]+\.[a-zA-Z]{2,}$'
+        )
+
+        if(email === '' || !email.match(emailRegex)){
+            alert('Email is required and have to be a valid email')
+            emailInput.style.borderBottom ='2px solid red'
+            return
+        }
+
+        const response = fetch('https://jsonplaceholder.typicode.com/posts', {
+            method: 'POST',
+            body: JSON.stringify({
+                email: email
+            }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            }
+        })
+        .then((response) => response.json())
+        .then((json) => console.log(json))
+        .catch((error) => console.error(error))
+
+        if(response){
+            emailInput.value = ''
+            emailInput.style.borderBottom = '2px solid gray'
+            modal.close()
+
+            setTimeout(() => {
+                modalGreet.showModal()
+                setTimeout(() => {
+                    modalGreet.close()
+                },1000)
+            },500)
+        }
+    })
+
+    closeModal.addEventListener('click', () => {
+        modal.close()
+    })
+
+    window.addEventListener('click', (event) => {
+        if(event.target === modal){
+            modal.close()
+        }
+    })
+
+    window.addEventListener('keydown', (event) => {
+        if(event.key === 'Escape'){
+            modal.close()
+        }
+    })
 }

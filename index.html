@@ -35,6 +35,22 @@
     </header>
     <!--Main-->
     <main>
+        <!--PopUp Modal NewsLetter-->
+        <dialog id="modal" class="modal">
+            <div class="modal-content">
+                <img src="./assets//close.png" alt="Close" id="close-modal">
+                <h2>Subscribe to our newsletter</h2>
+                <p>Get the latest news and offers</p>
+                <form id="newsletter-form">
+                    <label for="email-newsletter">Email</label>
+                    <input id="email-newsletter" name="email-newsletter" type="email" placeholder="Enter your email">
+                    <input id="submit-newsletter" type="submit" value="Subscribe">
+                </form>
+            </div>
+        </dialog>
+        <dialog id="modal-greet" class="modal-greet">
+            <h1>Thanks for subscribe!</h1>
+        </dialog>
         <!--Why Us-->
         <div id="why-us" class="container">
             <div class="sell-more">
