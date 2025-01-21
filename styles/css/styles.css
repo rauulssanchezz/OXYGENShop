@@ -1,3 +1,13 @@
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0.5rem;
+  background: var(--primary-color);
+  z-index: 1001;
+}
+
 header {
   width: 100%;
   color: #08A6E4;
