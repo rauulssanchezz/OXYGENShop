@@ -5,7 +5,7 @@ const main = () => {
         selectCurrency()
         handleContactForm()
         progressBar()
-        modalForm()
+        //modalForm()
         slider()
         returnButton()
     }catch(error){
@@ -46,15 +46,20 @@ function positionMenu () {
         lists[i].addEventListener('click', () => {
             for(let j = 0; j < lists.length; j++){
                 lists[j].style.border = 'none'
+                lists[j].style.fontWeight = 'normal';
+                lists[j].style.color = '#A5A5A5';
             }
-            lists[i].style.borderBottom = '2px solid #08A6E4'
+
+            lists[i].style.borderBottom = '3px solid #08A6E4';
+            lists[i].style.fontWeight = 'bold';
+            lists[i].style.color = 'black';
         })
 
         lists[i].addEventListener('mouseover', () => {
             for(let j = 0; j < lists.length; j++){
                 lists[j].style.border = 'none'
             }
-            lists[i].style.borderBottom = '2px solid #08A6E4'
+            lists[i].style.borderBottom = '3px solid #08A6E4'
         })
     }
 
@@ -300,7 +305,6 @@ function modalForm () {
 
         if(response){
             emailInput.value = ''
-            emailInput.style.borderBottom = '2px solid gray'
             modal.close()
 
             setTimeout(() => {
@@ -329,7 +333,7 @@ function modalForm () {
     })
 
     window.addEventListener('scroll', () => {
-        if(document.documentElement.scrollTop > 600){
+        if(document.documentElement.scrollTop > document.documentElement.scrollTop * 0.25){
             modal.close()
         }
     })

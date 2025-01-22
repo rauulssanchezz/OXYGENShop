@@ -1,5 +1,5 @@
 .modal{
-    height: 20rem;
+    width: 30%;
 
     border: 2px solid var(--primary-color);
     box-shadow: 0.5rem 0.5rem 0.5rem rgb(189, 187, 187);
@@ -8,9 +8,9 @@
     .modal-content{
         height: 100%;
         img{
-            position: relative;
-            left: 9.5rem;
-            bottom: 0.5rem;
+            position: absolute;
+            right: 1rem;
+            top: 0.5rem;
             transition: all 0.3s ease-in;
         }
 

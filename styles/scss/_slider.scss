@@ -8,7 +8,7 @@
     padding: 0.5rem 1rem;
 
     margin: auto;
-    margin-top: 5rem;
+    margin-top: 8rem;
 
     background: black;
 
@@ -35,7 +35,7 @@
         }
     }
 
-    .back, .next:hover{
+    .back:hover, .next:hover{
         transform: scale(1.1);
     }
 
@@ -43,7 +43,13 @@
         width: 60%;
         height: 100%;
 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
         img{
+            width: 100%;
             height: 80%;
 
             display: none;
