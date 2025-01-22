@@ -6,6 +6,7 @@ const main = () => {
         handleContactForm()
         progressBar()
         modalForm()
+        returnButton()
     }catch(error){
         console.error(error)
     }
@@ -279,4 +280,14 @@ async function fetchFormData (objBody) {
     .catch((error) => console.error(error))
 
     return response
+}
+
+function returnButton(){
+    const returnButton = document.getElementById('return-button')
+    returnButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 400,
+            behavior: 'smooth'
+        })
+    })
 }
