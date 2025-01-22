@@ -44,6 +44,9 @@
                 <form id="newsletter-form">
                     <label for="email-newsletter">Email</label>
                     <input id="email-newsletter" name="email-newsletter" type="email" placeholder="Enter your email">
+                    <p id="modal-email-error" class="error">
+                        Email is required and have to be a valid email
+                    </p>
                     <input id="submit-newsletter" type="submit" value="Subscribe">
                 </form>
             </div>
@@ -271,8 +274,14 @@
                     <form id="contact-form">
                         <label for="name">Name</label>
                         <input id="name" name="name" type="text">
+                        <p id="name-error" class="error">
+                            Name is required and have to be between 2 and 100 characters
+                        </p>
                         <label for="email">Email</label>
                         <input id="email" name="email" type="email">
+                        <p id="email-error" class="error">
+                            Email is required and have to be a valid email
+                        </p>
                     </form>
                     <input id="privacity" type="checkbox" checked>
                     <label for="privacity">
@@ -284,9 +293,9 @@
                          of personal data and on the free movement of such data, and repealing 
                          Directive 95/46/EC (Data Protection Directive)
                     </label>
+                    <input id="contact-input-button" type="button" value="Send">
                 </div>
             </div>
-            <input id="contact-input-button" type="button" value="Send">
         </div>
 
         <!--Slider-->

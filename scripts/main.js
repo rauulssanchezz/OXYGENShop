@@ -71,6 +71,8 @@ async function handleContactForm () {
     const emailInput = document.getElementById('email')
     const contactInputButton = document.getElementById('contact-input-button')
     const checkBoxPrivacity = document.getElementById('privacity')
+    const nameError = document.getElementById('name-error')
+    const emailError = document.getElementById('email-error')
 
     let name = ''
     let email = ''
@@ -96,7 +98,7 @@ async function handleContactForm () {
                 privacity: check
             }
 
-            const response = await fetchFormData(objBody)
+            await fetchFormData(objBody)
 
             alert('Form sent successfully')
             nameInput.value = ''
@@ -105,17 +107,76 @@ async function handleContactForm () {
             emailInput.style.borderBottom = '2px solid gray'
             checkBoxPrivacity.style.border= '2px solid gray'
 
+        }else if((name === '' || (name <= 2 && name >= 100)) && (email === '' || !email.match(emailRegex)) && !check){
+            alert('Name is required and have to be between 2 and 100 characters\nEmail is required and have to be a valid email\nYou have to accept the privacity policy')
+            nameInput.style.borderBottom ='2px solid red'
+            nameError.style.display = 'block'
+
+            emailInput.style.borderBottom ='2px solid red'
+            emailError.style.display = 'block'
+
+            checkBoxPrivacity.style.border ='2px solid red'
+
+            return 
+        }else if((name === '' || (name <= 2 && name >= 100)) && (email === '' || !email.match(emailRegex))){
+            checkBoxPrivacity.style.border= '2px solid gray'
+
+            alert('Name is required and have to be between 2 and 100 characters\nEmail is required and have to be a valid email')
+            nameInput.style.borderBottom ='2px solid red'
+            nameError.style.display = 'block'
+
+            emailInput.style.borderBottom ='2px solid red'
+            emailError.style.display = 'block'
+
+            return
+        }else if((name === '' || (name <= 2 && name >= 100)) && !check){
+            emailInput.style.borderBottom = '2px solid gray'
+            emailError.style.display = 'none'
+
+            alert('Name is required and have to be between 2 and 100 characters\nYou have to accept the privacity policy')
+            nameInput.style.borderBottom ='2px solid red'
+            nameError.style.display = 'block'
+
+            checkBoxPrivacity.style.border ='2px solid red'
+
+            return 
+        }else if((email === '' || !email.match(emailRegex)) && !check){
+            nameInput.style.borderBottom = '2px solid gray'
+            nameError.style.display = 'none'
+
+            alert('Email is required and have to be a valid email\nYou have to accept the privacity policy')
+            emailInput.style.borderBottom ='2px solid red'
+            emailError.style.display = 'block'
+
+            checkBoxPrivacity.style.border ='2px solid red'
+
+            return 
         }else if(name === '' || (name <= 2 && name >= 100)){
+            emailInput.style.borderBottom = '2px solid gray'
+            emailError.style.display = 'none'
+            checkBoxPrivacity.style.border= '2px solid gray'
+
             alert('Name is required and have to be between 2 and 100 characters')
             nameInput.style.borderBottom ='2px solid red'
+            nameError.style.display = 'block'
             return
             
         }else if(email === '' || !email.match(emailRegex)){
+            nameInput.style.borderBottom = '2px solid gray'
+            nameError.style.display = 'none'
+            checkBoxPrivacity.style.border= '2px solid gray'
+
             alert('Email is required and have to be a valid email')
             emailInput.style.borderBottom ='2px solid red'
+            emailError.style.display = 'block'
             return
 
         }else if(!check){
+            nameInput.style.borderBottom = '2px solid gray'
+            nameError.style.display = 'none'
+            emailInput.style.borderBottom = '2px solid gray'
+            emailError.style.display = 'none'
+
             alert('You have to accept the privacity policy')
             checkBoxPrivacity.style.border ='2px solid red'
             return
@@ -206,6 +267,7 @@ async function getCurrencies (currency) {
 function modalForm () {
     const modal = document.getElementById('modal')
     const closeModal = document.getElementById('close-modal')
+    const emailError = document.getElementById('modal-email-error')
     modal.showModal()
 
     const modalGreet = document.getElementById('modal-greet')
@@ -225,6 +287,7 @@ function modalForm () {
         if(email === '' || !email.match(emailRegex)){
             alert('Email is required and have to be a valid email')
             emailInput.style.borderBottom ='2px solid red'
+            emailError.style.display = 'block'
             return
         }
 
@@ -266,7 +329,7 @@ function modalForm () {
     })
 
     window.addEventListener('scroll', () => {
-        if(document.documentElement.scrollTop > 400){
+        if(document.documentElement.scrollTop > 600){
             modal.close()
         }
     })
