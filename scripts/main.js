@@ -116,15 +116,9 @@ async function handleContactForm () {
     })
 }
 
-//not functional
 function progressBar() {
-    console.log('progressBar')
-    console.log({window})
-    console.log({document})
     try{
-        console.log(window.onscroll = () => {})
         window.addEventListener('scroll', () => {
-            console.log('scrolling')
             const progressBar = document.getElementById('progress-bar')
     
             const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
@@ -135,7 +129,6 @@ function progressBar() {
     
             progressBar.style.width = `${progress}%`
     
-           console.log(`changing: ${progress}`)
         })
     }catch(error){
         console.error(error)
