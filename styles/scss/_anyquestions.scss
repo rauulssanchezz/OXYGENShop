@@ -91,7 +91,14 @@
     }
 }
 
-
+@media  screen and (max-width: 400px) {
+    .any-questions{
+        input[type = "button"]{
+            width: 6rem;
+            right: 0;
+        }
+    }
+}
 
 @media screen and (min-width: 768px){
     .any-questions{
