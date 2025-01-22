@@ -284,37 +284,53 @@ async function fetchFormData (objBody) {
 
 function slider () {
     const imgs = document.getElementsByClassName('slider-img')
+    const imgIndicatorContainer = document.getElementById('img-indicator-container')
     const back = document.getElementById('back')
     const next = document.getElementById('next')
+
+    for(let i = 0; i < imgs.length; i++){
+        const imgIndicator = document.createElement('div')
+        imgIndicator.classList.add('img-indicator')
+        imgIndicatorContainer.appendChild(imgIndicator)
+    }
+
+    const imgsIndicators = document.getElementsByClassName('img-indicator')
 
     console.log('slider', {imgs})
 
     imgs[0].style.display = 'block'
+    imgsIndicators[0].style.background = 'rgb(185, 183, 183)'
 
     let i = 0
 
     const loop = () => {
         setInterval(() => {
             imgs[i].style.display = 'none'
+            imgsIndicators[i].style.background = 'rgba(185, 183, 183, 0.586)'
             const shift = (i + 1) % imgs.length
             imgs[shift].style.display = 'block'
+            imgsIndicators[shift].style.background = 'rgb(185, 183, 183)'
             i = (i + 1) % imgs.length
-        }, 2000)
+        }, 2500)
     }
 
-    setTimeout(() => loop(0), 2000)
+    setTimeout(() => loop(0), 2500)
 
     back.addEventListener('click', () => {
         imgs[i].style.display = 'none'
+        imgsIndicators[i].style.background = 'rgba(185, 183, 183, 0.586)'
         const shift = ((i - 1) + imgs.length) % imgs.length
         imgs[shift].style.display = 'block'
+        imgsIndicators[shift].style.background = 'rgb(185, 183, 183)'
         i = ((i - 1) + imgs.length) % imgs.length 
     })
 
     next.addEventListener('click', () => {
         imgs[i].style.display = 'none'
+        imgsIndicators[i].style.background = 'rgba(185, 183, 183, 0.586)'
         const shift = (i + 1) % imgs.length
         imgs[shift].style.display = 'block'
+        imgsIndicators[shift].style.background = 'rgb(185, 183, 183)'
         i = (i + 1) % imgs.length
     })
 }
