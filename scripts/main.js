@@ -123,7 +123,7 @@ function progressBar() {
     console.log({document})
     try{
         console.log(window.onscroll = () => {})
-        window.onscroll = () => {
+        window.addEventListener('scroll', () => {
             console.log('scrolling')
             const progressBar = document.getElementById('progress-bar')
     
@@ -136,7 +136,7 @@ function progressBar() {
             progressBar.style.width = `${progress}%`
     
            console.log(`changing: ${progress}`)
-        }
+        })
     }catch(error){
         console.error(error)
     }
@@ -263,6 +263,12 @@ function modalForm () {
             modal.close()
         }
     })
+
+    window.addEventListener('scroll', () => {
+        if(document.documentElement.scrollTop > 400){
+            modal.close()
+        }
+    })
 }
 
 async function fetchFormData (objBody) {
@@ -284,6 +290,13 @@ async function fetchFormData (objBody) {
 
 function returnButton(){
     const returnButton = document.getElementById('return-button')
+    window.onscroll = () => {
+        if(document.documentElement.scrollTop > 400){
+            returnButton.style.display = 'block'
+        }else{
+            returnButton.style.display = 'none'
+        }
+    }
     returnButton.addEventListener('click', () => {
         window.scrollTo({
             top: 400,
