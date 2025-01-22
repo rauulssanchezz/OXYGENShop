@@ -6,6 +6,7 @@ const main = () => {
         handleContactForm()
         progressBar()
         modalForm()
+        slider()
         returnButton()
     }catch(error){
         console.error(error)
@@ -281,7 +282,44 @@ async function fetchFormData (objBody) {
     return response
 }
 
-function returnButton(){
+function slider () {
+    const imgs = document.getElementsByClassName('slider-img')
+    const back = document.getElementById('back')
+    const next = document.getElementById('next')
+
+    console.log('slider', {imgs})
+
+    imgs[0].style.display = 'block'
+
+    let i = 0
+
+    const loop = () => {
+        setInterval(() => {
+            imgs[i].style.display = 'none'
+            const shift = (i + 1) % imgs.length
+            imgs[shift].style.display = 'block'
+            i = (i + 1) % imgs.length
+        }, 2000)
+    }
+
+    setTimeout(() => loop(0), 2000)
+
+    back.addEventListener('click', () => {
+        imgs[i].style.display = 'none'
+        const shift = ((i - 1) + imgs.length) % imgs.length
+        imgs[shift].style.display = 'block'
+        i = ((i - 1) + imgs.length) % imgs.length 
+    })
+
+    next.addEventListener('click', () => {
+        imgs[i].style.display = 'none'
+        const shift = (i + 1) % imgs.length
+        imgs[shift].style.display = 'block'
+        i = (i + 1) % imgs.length
+    })
+}
+
+function returnButton () {
     const returnButton = document.getElementById('return-button')
     window.onscroll = () => {
         if(document.documentElement.scrollTop > 400){
