@@ -353,7 +353,7 @@ function returnButton () {
     }
     returnButton.addEventListener('click', () => {
         window.scrollTo({
-            top: 400,
+            top: 0,
             behavior: 'smooth'
         })
     })
