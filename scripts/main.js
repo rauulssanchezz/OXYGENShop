@@ -5,7 +5,7 @@ const main = () => {
         selectCurrency()
         handleContactForm()
         progressBar()
-        //modalForm()
+        modalForm()
         slider()
         returnButton()
     }catch(error){
@@ -53,13 +53,6 @@ function positionMenu () {
             lists[i].style.borderBottom = '3px solid #08A6E4';
             lists[i].style.fontWeight = 'bold';
             lists[i].style.color = 'black';
-        })
-
-        lists[i].addEventListener('mouseover', () => {
-            for(let j = 0; j < lists.length; j++){
-                lists[j].style.border = 'none'
-            }
-            lists[i].style.borderBottom = '3px solid #08A6E4'
         })
     }
 
