@@ -29,10 +29,13 @@ function toggleMenu () {
             toggleMenu.style.backgroundImage = 'none'
         }else{
             toggleMenu.style.backgroundImage = 'url(./assets/close.png)'
+            toggleMenu.style.backgroundSize = 'contain'
+            toggleMenu.style.backgroundRepeat = 'no-repeat'
+            toggleMenu.style.backgroundPosition = 'center'
         }
 
         toggleMenu.style.backgroundSize = 'contain'
-        toggleMenu.style.marginInlineEnd = toggleMenu.style.marginInlineEnd === '0.5rem' ? '0' : '0.5rem'
+        toggleMenu.style.width = '2rem'
         toggleMenu.style.marginTop= toggleMenu.style.marginTop === '0.5rem' ? '0' : '0.5rem'
         nav.style.display = nav.style.display === 'block' ? 'none' : 'block'
     })

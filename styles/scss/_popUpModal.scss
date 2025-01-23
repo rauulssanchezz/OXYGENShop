@@ -59,3 +59,10 @@
     background: #ffffff0a;
     color: black;
 }
+
+@media screen and (max-width: 600px){
+    .modal{
+        width: 40%;
+    }
+    
+}

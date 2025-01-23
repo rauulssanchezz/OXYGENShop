@@ -46,9 +46,8 @@ header h1 {
 
 .toggle-menu {
   display: inline-block;
-  max-width: 15%;
   position: fixed;
-  right: 0;
+  right: 1rem;
   top: 1.8rem;
   padding: 2%;
 }
@@ -174,6 +173,11 @@ header h1 {
   color: black;
 }
 
+@media screen and (max-width: 600px) {
+  .modal {
+    width: 40%;
+  }
+}
 .container .sell-more {
   padding: 0 10%;
 }
@@ -1339,7 +1343,8 @@ footer .footer-imgs img {
   background: black;
 }
 .slider-container .back, .slider-container .next {
-  width: 5%;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 99px;
   background: rgba(220, 217, 217, 0.704);
   transition: transform 0.3s ease-in-out;
@@ -1347,13 +1352,16 @@ footer .footer-imgs img {
 }
 .slider-container .back img, .slider-container .next img {
   width: 70%;
+  height: 100%;
   margin: auto;
+  text-align: center;
 }
 .slider-container .back img {
   transform: rotate(180deg);
 }
 .slider-container .back:hover, .slider-container .next:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 .slider-container .img-container {
   width: 60%;
@@ -1385,6 +1393,38 @@ footer .footer-imgs img {
   transition: all 0.3s ease-in-out;
 }
 
+@media screen and (max-width: 600px) {
+  .slider-container {
+    width: 60%;
+  }
+  .slider-container .back, .slider-container .next {
+    width: 2rem;
+    height: 2rem;
+  }
+  .slider-container .img-indicator-container {
+    width: 70%;
+  }
+  .slider-container .img-indicator-container .img-indicator {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .slider-container {
+    width: 80%;
+  }
+  .slider-container .back, .slider-container .next {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .slider-container .img-indicator-container {
+    width: 80%;
+  }
+  .slider-container .img-indicator-container .img-indicator {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+}
 .return-button {
   background-color: rgb(219, 213, 213);
   width: fit-content;

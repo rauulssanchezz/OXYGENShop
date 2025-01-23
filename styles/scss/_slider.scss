@@ -13,7 +13,8 @@
     background: black;
 
     .back, .next{
-        width: 5%;
+        width: 2.5rem;
+        height: 2.5rem;
 
         border-radius: 99px;
 
@@ -25,7 +26,9 @@
 
         img{
             width: 70%;
+            height: 100%;
             margin: auto;
+            text-align: center;
         }
     }
 
@@ -37,6 +40,7 @@
 
     .back:hover, .next:hover{
         transform: scale(1.1);
+        cursor: pointer;
     }
 
     .img-container{
@@ -78,4 +82,45 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 600px){
+    .slider-container{
+        width: 60%;
+
+        .back, .next{
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .img-indicator-container{
+            width: 70%;
+
+            .img-indicator{
+                width: 0.8rem;
+                height: 0.8rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px){
+    .slider-container{
+        width: 80%;
+
+        .back, .next{
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+
+        .img-indicator-container{
+            width: 80%;
+
+            .img-indicator{
+                width: 0.6rem;
+                height: 0.6rem;
+            }
+        }
+    }
+    
 }
